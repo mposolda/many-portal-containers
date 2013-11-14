@@ -20,47 +20,28 @@
     xmlns="http://www.gatein.org/xml/ns/gatein_objects_1_4">
 
     <page>
-        <name>samplePage1</name>
-        <title>samplePage1</title>
+        <name>sample-portal1-page1</name>
+        <title>sample-portal1-page1</title>
         <access-permissions>Everyone</access-permissions>
         <edit-permission>*:/platform/administrators</edit-permission>
         <portlet-application>
-            <portlet>
-                <application-ref>web</application-ref>
-                <portlet-ref>IFramePortlet</portlet-ref>
-                <preferences>
-                    <preference>
-                        <name>url</name>
-                        <value>http://jboss.org/gatein</value>
-                        <read-only>false</read-only>
-                    </preference>
-                </preferences>
-            </portlet>
-            <title>samplePage1Portlet</title>
-            <access-permissions>Everyone</access-permissions>
-            <show-info-bar>false</show-info-bar>
-            <show-application-state>false</show-application-state>
-            <show-application-mode>false</show-application-mode>
+          <portlet>
+            <application-ref>web</application-ref>
+            <portlet-ref>FooterPortlet</portlet-ref>
+            <preferences>
+              <preference>
+                <name>template</name>
+                <value>par:/groovy/groovy/webui/component/UIFooterPortlet.gtmpl</value>
+                <read-only>false</read-only>
+              </preference>
+            </preferences>
+          </portlet>
+          <title>HelloWorldPortlet1</title>
+          <access-permissions>Everyone</access-permissions>
+          <show-info-bar>false</show-info-bar>
+          <show-application-state>false</show-application-state>
+          <show-application-mode>false</show-application-mode>
         </portlet-application>
     </page>
 
-  <!--
-    <page>
-        <name>coolPage</name>
-        <title>Cool Page</title>
-        <access-permissions>Everyone</access-permissions>
-        <edit-permission>*:/platform/administrators</edit-permission>
-        <portlet-application>
-            <portlet>
-                <application-ref>sample-portal</application-ref>
-                <portlet-ref>CoolPortlet</portlet-ref>
-            </portlet>
-            <title>Cool Portlet</title>
-            <access-permissions>Everyone</access-permissions>
-            <show-info-bar>false</show-info-bar>
-            <show-application-state>false</show-application-state>
-            <show-application-mode>false</show-application-mode>
-        </portlet-application>
-    </page>
-      -->
 </page-set>

@@ -22,9 +22,9 @@
 
     <page-nodes>
         <node>
-            <name>sample-group1</name>
-            <label>sample-group1</label>
-            <page-reference>group::/platform/users::sitemap1</page-reference>
+            <name>sample-portal1-group1</name>
+            <label>sample-portal1-group1</label>
+            <page-reference>group::/platform/users::sample-portal1-group1</page-reference>
         </node>
     </page-nodes>
 </node-navigation>

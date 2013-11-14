@@ -27,4 +27,7 @@
     <artifactId>sample-portal1-config</artifactId>
     <name>sample-portal1-config</name>
     <packaging>jar</packaging>
+    <build>
+      <finalName>sample-portal1-config</finalName>
+    </build>
 </project>

@@ -22,20 +22,9 @@
 
     <page-nodes>
         <node>
-            <name>samplePage1</name>
-            <label>samplePage1</label>
-            <page-reference>portal::classic::samplePage1</page-reference>
+            <name>sample-portal1-page1</name>
+            <label>sample-portal1-page1</label>
+            <page-reference>portal::classic::sample-portal1-page1</page-reference>
         </node>
-        <!--<node>
-            <name>coolPage</name>
-            <label>#{portal.extension.CoolPage}</label>
-            <page-reference>portal::classic::coolPage</page-reference>
-        </node>-->
-        <!--<node>
-            <name>groupnavigation</name>
-            <label>#{portal.classic.groupnavigation}</label>
-            <visibility>DISPLAYED</visibility>
-            <page-reference>portal::classic::groupnavigation</page-reference>
-        </node>-->
     </page-nodes>
 </node-navigation>

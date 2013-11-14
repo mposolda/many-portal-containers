@@ -22,9 +22,9 @@
 
     <page-nodes>
         <node>
-            <name>sample-user1</name>
-            <label>sample-user1</label>
-            <page-reference>user::root::sampledashboard1</page-reference>
+            <name>sample-portal1-user1</name>
+            <label>sample-portal1-user1</label>
+            <page-reference>user::root::sample-portal1-user1</page-reference>
         </node>
     </page-nodes>
 </node-navigation>
