@@ -15,7 +15,7 @@ function replaceSamplePortalPattern() {
 
 if [ -z "$1" ]; then
   echo "Invalid usage!";
-  echo "You need to add one argument specifying the number for EAR with sample-portal to create. For example 'create-ear.sh 2' will create sample-portal2.ear";
+  echo "You need to add one argument specifying the number for EAR with sample-portal to create. For example 'scripts/create-ear.sh 2' will create sample-portal2.ear";  
   exit
 fi
 
