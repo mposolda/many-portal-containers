@@ -7,11 +7,11 @@ if [ -z "$1" ]; then
 fi
 
 # Add command for portal database on top
-echo "drop database portal1";
-echo "create database portal1";
+echo "drop database portal1;";
+echo "create database portal1;";
 
 # Add commands for sampleportal databases
 for I in $(seq 1 $1); do
-  echo "drop database sampleportal$I";
-  echo "create database sampleportal$I";
+  echo "drop database sampleportal$I;";
+  echo "create database sampleportal$I;";
 done;
