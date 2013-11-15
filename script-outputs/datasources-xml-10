@@ -1,0 +1,381 @@
+
+<!-- Uncommented this when deploying sample-portal1 -->
+<datasource jndi-name="java:/jdbcidm_sample-portal1" pool-name="IDMsample-portal1" enabled="true" use-java-context="true">
+  <connection-url>jdbc:mysql://localhost/sampleportal1</connection-url>
+  <driver>mysql</driver>
+  <security>
+    <user-name>portal</user-name>
+    <password>portal</password>
+  </security>
+  <transaction-isolation>TRANSACTION_READ_COMMITTED</transaction-isolation>
+  <pool>
+    <min-pool-size>2</min-pool-size>
+    <max-pool-size>100</max-pool-size>
+    <prefill>true</prefill>
+  </pool>
+  <statement>
+    <prepared-statement-cache-size>100</prepared-statement-cache-size>
+    <share-prepared-statements>true</share-prepared-statements>
+  </statement>
+</datasource>
+<datasource jndi-name="java:/jdbcjcr_sample-portal1" pool-name="JCRsample-portal1" enabled="true" use-java-context="true">
+  <connection-url>jdbc:mysql://localhost/sampleportal1</connection-url>
+  <driver>mysql</driver>
+  <security>
+    <user-name>portal</user-name>
+    <password>portal</password>
+  </security>
+  <transaction-isolation>TRANSACTION_READ_COMMITTED</transaction-isolation>
+  <pool>
+    <min-pool-size>2</min-pool-size>
+    <max-pool-size>100</max-pool-size>
+    <prefill>true</prefill>
+  </pool>
+  <statement>
+    <prepared-statement-cache-size>100</prepared-statement-cache-size>
+    <share-prepared-statements>true</share-prepared-statements>
+  </statement>
+</datasource>
+
+<!-- Uncommented this when deploying sample-portal2 -->
+<datasource jndi-name="java:/jdbcidm_sample-portal2" pool-name="IDMsample-portal2" enabled="true" use-java-context="true">
+  <connection-url>jdbc:mysql://localhost/sampleportal2</connection-url>
+  <driver>mysql</driver>
+  <security>
+    <user-name>portal</user-name>
+    <password>portal</password>
+  </security>
+  <transaction-isolation>TRANSACTION_READ_COMMITTED</transaction-isolation>
+  <pool>
+    <min-pool-size>2</min-pool-size>
+    <max-pool-size>100</max-pool-size>
+    <prefill>true</prefill>
+  </pool>
+  <statement>
+    <prepared-statement-cache-size>100</prepared-statement-cache-size>
+    <share-prepared-statements>true</share-prepared-statements>
+  </statement>
+</datasource>
+<datasource jndi-name="java:/jdbcjcr_sample-portal2" pool-name="JCRsample-portal2" enabled="true" use-java-context="true">
+  <connection-url>jdbc:mysql://localhost/sampleportal2</connection-url>
+  <driver>mysql</driver>
+  <security>
+    <user-name>portal</user-name>
+    <password>portal</password>
+  </security>
+  <transaction-isolation>TRANSACTION_READ_COMMITTED</transaction-isolation>
+  <pool>
+    <min-pool-size>2</min-pool-size>
+    <max-pool-size>100</max-pool-size>
+    <prefill>true</prefill>
+  </pool>
+  <statement>
+    <prepared-statement-cache-size>100</prepared-statement-cache-size>
+    <share-prepared-statements>true</share-prepared-statements>
+  </statement>
+</datasource>
+
+<!-- Uncommented this when deploying sample-portal3 -->
+<datasource jndi-name="java:/jdbcidm_sample-portal3" pool-name="IDMsample-portal3" enabled="true" use-java-context="true">
+  <connection-url>jdbc:mysql://localhost/sampleportal3</connection-url>
+  <driver>mysql</driver>
+  <security>
+    <user-name>portal</user-name>
+    <password>portal</password>
+  </security>
+  <transaction-isolation>TRANSACTION_READ_COMMITTED</transaction-isolation>
+  <pool>
+    <min-pool-size>2</min-pool-size>
+    <max-pool-size>100</max-pool-size>
+    <prefill>true</prefill>
+  </pool>
+  <statement>
+    <prepared-statement-cache-size>100</prepared-statement-cache-size>
+    <share-prepared-statements>true</share-prepared-statements>
+  </statement>
+</datasource>
+<datasource jndi-name="java:/jdbcjcr_sample-portal3" pool-name="JCRsample-portal3" enabled="true" use-java-context="true">
+  <connection-url>jdbc:mysql://localhost/sampleportal3</connection-url>
+  <driver>mysql</driver>
+  <security>
+    <user-name>portal</user-name>
+    <password>portal</password>
+  </security>
+  <transaction-isolation>TRANSACTION_READ_COMMITTED</transaction-isolation>
+  <pool>
+    <min-pool-size>2</min-pool-size>
+    <max-pool-size>100</max-pool-size>
+    <prefill>true</prefill>
+  </pool>
+  <statement>
+    <prepared-statement-cache-size>100</prepared-statement-cache-size>
+    <share-prepared-statements>true</share-prepared-statements>
+  </statement>
+</datasource>
+
+<!-- Uncommented this when deploying sample-portal4 -->
+<datasource jndi-name="java:/jdbcidm_sample-portal4" pool-name="IDMsample-portal4" enabled="true" use-java-context="true">
+  <connection-url>jdbc:mysql://localhost/sampleportal4</connection-url>
+  <driver>mysql</driver>
+  <security>
+    <user-name>portal</user-name>
+    <password>portal</password>
+  </security>
+  <transaction-isolation>TRANSACTION_READ_COMMITTED</transaction-isolation>
+  <pool>
+    <min-pool-size>2</min-pool-size>
+    <max-pool-size>100</max-pool-size>
+    <prefill>true</prefill>
+  </pool>
+  <statement>
+    <prepared-statement-cache-size>100</prepared-statement-cache-size>
+    <share-prepared-statements>true</share-prepared-statements>
+  </statement>
+</datasource>
+<datasource jndi-name="java:/jdbcjcr_sample-portal4" pool-name="JCRsample-portal4" enabled="true" use-java-context="true">
+  <connection-url>jdbc:mysql://localhost/sampleportal4</connection-url>
+  <driver>mysql</driver>
+  <security>
+    <user-name>portal</user-name>
+    <password>portal</password>
+  </security>
+  <transaction-isolation>TRANSACTION_READ_COMMITTED</transaction-isolation>
+  <pool>
+    <min-pool-size>2</min-pool-size>
+    <max-pool-size>100</max-pool-size>
+    <prefill>true</prefill>
+  </pool>
+  <statement>
+    <prepared-statement-cache-size>100</prepared-statement-cache-size>
+    <share-prepared-statements>true</share-prepared-statements>
+  </statement>
+</datasource>
+
+<!-- Uncommented this when deploying sample-portal5 -->
+<datasource jndi-name="java:/jdbcidm_sample-portal5" pool-name="IDMsample-portal5" enabled="true" use-java-context="true">
+  <connection-url>jdbc:mysql://localhost/sampleportal5</connection-url>
+  <driver>mysql</driver>
+  <security>
+    <user-name>portal</user-name>
+    <password>portal</password>
+  </security>
+  <transaction-isolation>TRANSACTION_READ_COMMITTED</transaction-isolation>
+  <pool>
+    <min-pool-size>2</min-pool-size>
+    <max-pool-size>100</max-pool-size>
+    <prefill>true</prefill>
+  </pool>
+  <statement>
+    <prepared-statement-cache-size>100</prepared-statement-cache-size>
+    <share-prepared-statements>true</share-prepared-statements>
+  </statement>
+</datasource>
+<datasource jndi-name="java:/jdbcjcr_sample-portal5" pool-name="JCRsample-portal5" enabled="true" use-java-context="true">
+  <connection-url>jdbc:mysql://localhost/sampleportal5</connection-url>
+  <driver>mysql</driver>
+  <security>
+    <user-name>portal</user-name>
+    <password>portal</password>
+  </security>
+  <transaction-isolation>TRANSACTION_READ_COMMITTED</transaction-isolation>
+  <pool>
+    <min-pool-size>2</min-pool-size>
+    <max-pool-size>100</max-pool-size>
+    <prefill>true</prefill>
+  </pool>
+  <statement>
+    <prepared-statement-cache-size>100</prepared-statement-cache-size>
+    <share-prepared-statements>true</share-prepared-statements>
+  </statement>
+</datasource>
+
+<!-- Uncommented this when deploying sample-portal6 -->
+<datasource jndi-name="java:/jdbcidm_sample-portal6" pool-name="IDMsample-portal6" enabled="true" use-java-context="true">
+  <connection-url>jdbc:mysql://localhost/sampleportal6</connection-url>
+  <driver>mysql</driver>
+  <security>
+    <user-name>portal</user-name>
+    <password>portal</password>
+  </security>
+  <transaction-isolation>TRANSACTION_READ_COMMITTED</transaction-isolation>
+  <pool>
+    <min-pool-size>2</min-pool-size>
+    <max-pool-size>100</max-pool-size>
+    <prefill>true</prefill>
+  </pool>
+  <statement>
+    <prepared-statement-cache-size>100</prepared-statement-cache-size>
+    <share-prepared-statements>true</share-prepared-statements>
+  </statement>
+</datasource>
+<datasource jndi-name="java:/jdbcjcr_sample-portal6" pool-name="JCRsample-portal6" enabled="true" use-java-context="true">
+  <connection-url>jdbc:mysql://localhost/sampleportal6</connection-url>
+  <driver>mysql</driver>
+  <security>
+    <user-name>portal</user-name>
+    <password>portal</password>
+  </security>
+  <transaction-isolation>TRANSACTION_READ_COMMITTED</transaction-isolation>
+  <pool>
+    <min-pool-size>2</min-pool-size>
+    <max-pool-size>100</max-pool-size>
+    <prefill>true</prefill>
+  </pool>
+  <statement>
+    <prepared-statement-cache-size>100</prepared-statement-cache-size>
+    <share-prepared-statements>true</share-prepared-statements>
+  </statement>
+</datasource>
+
+<!-- Uncommented this when deploying sample-portal7 -->
+<datasource jndi-name="java:/jdbcidm_sample-portal7" pool-name="IDMsample-portal7" enabled="true" use-java-context="true">
+  <connection-url>jdbc:mysql://localhost/sampleportal7</connection-url>
+  <driver>mysql</driver>
+  <security>
+    <user-name>portal</user-name>
+    <password>portal</password>
+  </security>
+  <transaction-isolation>TRANSACTION_READ_COMMITTED</transaction-isolation>
+  <pool>
+    <min-pool-size>2</min-pool-size>
+    <max-pool-size>100</max-pool-size>
+    <prefill>true</prefill>
+  </pool>
+  <statement>
+    <prepared-statement-cache-size>100</prepared-statement-cache-size>
+    <share-prepared-statements>true</share-prepared-statements>
+  </statement>
+</datasource>
+<datasource jndi-name="java:/jdbcjcr_sample-portal7" pool-name="JCRsample-portal7" enabled="true" use-java-context="true">
+  <connection-url>jdbc:mysql://localhost/sampleportal7</connection-url>
+  <driver>mysql</driver>
+  <security>
+    <user-name>portal</user-name>
+    <password>portal</password>
+  </security>
+  <transaction-isolation>TRANSACTION_READ_COMMITTED</transaction-isolation>
+  <pool>
+    <min-pool-size>2</min-pool-size>
+    <max-pool-size>100</max-pool-size>
+    <prefill>true</prefill>
+  </pool>
+  <statement>
+    <prepared-statement-cache-size>100</prepared-statement-cache-size>
+    <share-prepared-statements>true</share-prepared-statements>
+  </statement>
+</datasource>
+
+<!-- Uncommented this when deploying sample-portal8 -->
+<datasource jndi-name="java:/jdbcidm_sample-portal8" pool-name="IDMsample-portal8" enabled="true" use-java-context="true">
+  <connection-url>jdbc:mysql://localhost/sampleportal8</connection-url>
+  <driver>mysql</driver>
+  <security>
+    <user-name>portal</user-name>
+    <password>portal</password>
+  </security>
+  <transaction-isolation>TRANSACTION_READ_COMMITTED</transaction-isolation>
+  <pool>
+    <min-pool-size>2</min-pool-size>
+    <max-pool-size>100</max-pool-size>
+    <prefill>true</prefill>
+  </pool>
+  <statement>
+    <prepared-statement-cache-size>100</prepared-statement-cache-size>
+    <share-prepared-statements>true</share-prepared-statements>
+  </statement>
+</datasource>
+<datasource jndi-name="java:/jdbcjcr_sample-portal8" pool-name="JCRsample-portal8" enabled="true" use-java-context="true">
+  <connection-url>jdbc:mysql://localhost/sampleportal8</connection-url>
+  <driver>mysql</driver>
+  <security>
+    <user-name>portal</user-name>
+    <password>portal</password>
+  </security>
+  <transaction-isolation>TRANSACTION_READ_COMMITTED</transaction-isolation>
+  <pool>
+    <min-pool-size>2</min-pool-size>
+    <max-pool-size>100</max-pool-size>
+    <prefill>true</prefill>
+  </pool>
+  <statement>
+    <prepared-statement-cache-size>100</prepared-statement-cache-size>
+    <share-prepared-statements>true</share-prepared-statements>
+  </statement>
+</datasource>
+
+<!-- Uncommented this when deploying sample-portal9 -->
+<datasource jndi-name="java:/jdbcidm_sample-portal9" pool-name="IDMsample-portal9" enabled="true" use-java-context="true">
+  <connection-url>jdbc:mysql://localhost/sampleportal9</connection-url>
+  <driver>mysql</driver>
+  <security>
+    <user-name>portal</user-name>
+    <password>portal</password>
+  </security>
+  <transaction-isolation>TRANSACTION_READ_COMMITTED</transaction-isolation>
+  <pool>
+    <min-pool-size>2</min-pool-size>
+    <max-pool-size>100</max-pool-size>
+    <prefill>true</prefill>
+  </pool>
+  <statement>
+    <prepared-statement-cache-size>100</prepared-statement-cache-size>
+    <share-prepared-statements>true</share-prepared-statements>
+  </statement>
+</datasource>
+<datasource jndi-name="java:/jdbcjcr_sample-portal9" pool-name="JCRsample-portal9" enabled="true" use-java-context="true">
+  <connection-url>jdbc:mysql://localhost/sampleportal9</connection-url>
+  <driver>mysql</driver>
+  <security>
+    <user-name>portal</user-name>
+    <password>portal</password>
+  </security>
+  <transaction-isolation>TRANSACTION_READ_COMMITTED</transaction-isolation>
+  <pool>
+    <min-pool-size>2</min-pool-size>
+    <max-pool-size>100</max-pool-size>
+    <prefill>true</prefill>
+  </pool>
+  <statement>
+    <prepared-statement-cache-size>100</prepared-statement-cache-size>
+    <share-prepared-statements>true</share-prepared-statements>
+  </statement>
+</datasource>
+
+<!-- Uncommented this when deploying sample-portal10 -->
+<datasource jndi-name="java:/jdbcidm_sample-portal10" pool-name="IDMsample-portal10" enabled="true" use-java-context="true">
+  <connection-url>jdbc:mysql://localhost/sampleportal10</connection-url>
+  <driver>mysql</driver>
+  <security>
+    <user-name>portal</user-name>
+    <password>portal</password>
+  </security>
+  <transaction-isolation>TRANSACTION_READ_COMMITTED</transaction-isolation>
+  <pool>
+    <min-pool-size>2</min-pool-size>
+    <max-pool-size>100</max-pool-size>
+    <prefill>true</prefill>
+  </pool>
+  <statement>
+    <prepared-statement-cache-size>100</prepared-statement-cache-size>
+    <share-prepared-statements>true</share-prepared-statements>
+  </statement>
+</datasource>
+<datasource jndi-name="java:/jdbcjcr_sample-portal10" pool-name="JCRsample-portal10" enabled="true" use-java-context="true">
+  <connection-url>jdbc:mysql://localhost/sampleportal10</connection-url>
+  <driver>mysql</driver>
+  <security>
+    <user-name>portal</user-name>
+    <password>portal</password>
+  </security>
+  <transaction-isolation>TRANSACTION_READ_COMMITTED</transaction-isolation>
+  <pool>
+    <min-pool-size>2</min-pool-size>
+    <max-pool-size>100</max-pool-size>
+    <prefill>true</prefill>
+  </pool>
+  <statement>
+    <prepared-statement-cache-size>100</prepared-statement-cache-size>
+    <share-prepared-statements>true</share-prepared-statements>
+  </statement>
+</datasource>
+
