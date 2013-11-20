@@ -73,7 +73,12 @@ Then you can delete datasources-xml-10 file.
 Then copy the content of the file security-domains-xml-10 into appropriate section of GATEIN_HOME/standalone/configuration/standalone.xml .
 Then you can delete security-domains-xml-10 file.
 
-8) Delete GATEIN_HOME/standalone/data GATEIN_HOME/standalone/tmp GATEIN_HOME/standalone/log . Then run GATEIN and enjoy containers under:
+8) Delete GATEIN_HOME/standalone/data GATEIN_HOME/standalone/tmp GATEIN_HOME/standalone/log . 
+It may be also good to setup root password in GATEIN_HOME/standalone/configuration/gatein/configuration.properties, otherwise the setup.jsp will be shown to you for each container (In our case with 11 portal containers, you will need to setup root password in UI 11 times). To setup root password "gtn" you just need to add this into configuration.properties:
+gatein.portal.setup.initialpassword.root=6MSyXIj3kkQ=
+NOTE: (Just for quick testing. In production, you should use different root password then "gtn")
+
+9) Then run GATEIN and enjoy containers under:
 http://localhost:8080/portal
 http://localhost:8080/sample-portal1
 http://localhost:8080/sample-portal2
