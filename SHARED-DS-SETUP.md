@@ -75,4 +75,6 @@ NOTE 2: For more details see issue https://jira.exoplatform.org/browse/JCR-2252.
 will be removed and it would be possible to use anything for portal container name)
 
 4.b) Shared DS setup probably won't work for you if you are using Oracle DB due to the fact that length of DB table/index is limited to 30 characters. So in case
- of Oracle, you will probably need to stick with "classic" setup with separated DS/database per portal container.
+ of Oracle, you will probably need to stick with "classic" setup with separated DS/database per portal container. The limitation of object size could be the issue
+ for some other databases as well. If you have issues, you can try to keep the name of your portal container as short as possible
+ (For example instead of "sampleportal", use something like "samplp")

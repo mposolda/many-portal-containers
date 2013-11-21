@@ -3,7 +3,8 @@ many-portal-containers
 
 Util to create and deploy many portal containers into your GateIn/JPP
 
-EXAMPLE STEPS FOR CREATE AND DEPLOY 10 SAMPLE CONTAINERS:
+EXAMPLE STEPS FOR CREATE AND DEPLOY 10 SAMPLE CONTAINERS ON SEPARATE DATABASES
+==============================================================================
 
 1) Build with "mvn clean install"
 
@@ -87,3 +88,18 @@ http://localhost:8080/sampleportal10
 
 Note: We have one portal container and 10 sampleportal containers. So 11 portal containers totally.
 
+
+EXAMPLE STEPS FOR CREATE AND DEPLOY 10 SAMPLE CONTAINERS ON SINGLE DATABASES
+============================================================================
+1) Look at document https://github.com/mposolda/many-portal-containers/blob/master/SHARED-DS-SETUP.md and setup your portal according to this
+PS:
+- Make sure that you have sample portals like "sampleportal" without special characters in name.
+- Make sure that you are not using Oracle due to DB Tables/Indexes name restriction to 30 characters. It's recommended to check
+what's the max length for tables and indexes. Usually the limitation of 30 characters for table name is ok, but limitation of 30
+characters for index length is _not_ ok because with added _sampleportal suffix, the name exceeds the limit. You can try
+ to limit length of the name of your portal container to workaround.
+
+ NOTE: See https://jira.exoplatform.org/browse/JCR-2252 for more details
+
+2) Follow the steps from previous part about "separate databases" setup. Only exception is that you can avoid step 6
+ (you need just 2 datasources in standalone.xml without need to define all others) and step 3 is also much simpler as you just need to one database, which you configured for datasources.
