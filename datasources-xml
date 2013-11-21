@@ -1,5 +1,5 @@
-<!-- Uncommented this when deploying sample-portal1 -->
-<datasource jndi-name="java:/jdbcidm_sample-portal1" pool-name="IDMsample-portal1" enabled="true" use-java-context="true">
+<!-- Uncommented this when deploying sampleportal1 -->
+<datasource jndi-name="java:/jdbcidm_sampleportal1" pool-name="IDMsampleportal1" enabled="true" use-java-context="true">
   <connection-url>jdbc:mysql://localhost/sampleportal1</connection-url>
   <driver>mysql</driver>
   <security>
@@ -17,7 +17,7 @@
     <share-prepared-statements>true</share-prepared-statements>
   </statement>
 </datasource>
-<datasource jndi-name="java:/jdbcjcr_sample-portal1" pool-name="JCRsample-portal1" enabled="true" use-java-context="true">
+<datasource jndi-name="java:/jdbcjcr_sampleportal1" pool-name="JCRsampleportal1" enabled="true" use-java-context="true">
   <connection-url>jdbc:mysql://localhost/sampleportal1</connection-url>
   <driver>mysql</driver>
   <security>

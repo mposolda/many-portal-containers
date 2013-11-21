@@ -1,1050 +1,1050 @@
 
-<!-- Uncommented this when deploying sample-portal1 -->
-<security-domain name="gatein-domain-sample-portal1" cache-type="default">
+<!-- Uncommented this when deploying sampleportal1 -->
+<security-domain name="gatein-domain-sampleportal1" cache-type="default">
   <authentication>
     <login-module code="org.gatein.security.oauth.jaas.OAuthLoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal1"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal1"/>
+      <module-option name="portalContainerName" value="sampleportal1"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal1"/>
     </login-module>
     <login-module code="org.gatein.sso.integration.SSODelegateLoginModule" flag="required">
       <module-option name="enabled" value="#{gatein.sso.login.module.enabled}" />
       <module-option name="delegateClassName" value="#{gatein.sso.login.module.class}" />
-      <module-option name="portalContainerName" value="sample-portal1" />
-      <module-option name="realmName" value="gatein-domain-sample-portal1" />
+      <module-option name="portalContainerName" value="sampleportal1" />
+      <module-option name="realmName" value="gatein-domain-sampleportal1" />
       <module-option name="password-stacking" value="useFirstPass" />
     </login-module>
     <login-module code="org.exoplatform.services.security.j2ee.JBossAS7LoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal1"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal1"/>
+      <module-option name="portalContainerName" value="sampleportal1"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal1"/>
     </login-module>
   </authentication>
 </security-domain>
 
-<!-- Uncommented this when deploying sample-portal2 -->
-<security-domain name="gatein-domain-sample-portal2" cache-type="default">
+<!-- Uncommented this when deploying sampleportal2 -->
+<security-domain name="gatein-domain-sampleportal2" cache-type="default">
   <authentication>
     <login-module code="org.gatein.security.oauth.jaas.OAuthLoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal2"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal2"/>
+      <module-option name="portalContainerName" value="sampleportal2"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal2"/>
     </login-module>
     <login-module code="org.gatein.sso.integration.SSODelegateLoginModule" flag="required">
       <module-option name="enabled" value="#{gatein.sso.login.module.enabled}" />
       <module-option name="delegateClassName" value="#{gatein.sso.login.module.class}" />
-      <module-option name="portalContainerName" value="sample-portal2" />
-      <module-option name="realmName" value="gatein-domain-sample-portal2" />
+      <module-option name="portalContainerName" value="sampleportal2" />
+      <module-option name="realmName" value="gatein-domain-sampleportal2" />
       <module-option name="password-stacking" value="useFirstPass" />
     </login-module>
     <login-module code="org.exoplatform.services.security.j2ee.JBossAS7LoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal2"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal2"/>
+      <module-option name="portalContainerName" value="sampleportal2"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal2"/>
     </login-module>
   </authentication>
 </security-domain>
 
-<!-- Uncommented this when deploying sample-portal3 -->
-<security-domain name="gatein-domain-sample-portal3" cache-type="default">
+<!-- Uncommented this when deploying sampleportal3 -->
+<security-domain name="gatein-domain-sampleportal3" cache-type="default">
   <authentication>
     <login-module code="org.gatein.security.oauth.jaas.OAuthLoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal3"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal3"/>
+      <module-option name="portalContainerName" value="sampleportal3"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal3"/>
     </login-module>
     <login-module code="org.gatein.sso.integration.SSODelegateLoginModule" flag="required">
       <module-option name="enabled" value="#{gatein.sso.login.module.enabled}" />
       <module-option name="delegateClassName" value="#{gatein.sso.login.module.class}" />
-      <module-option name="portalContainerName" value="sample-portal3" />
-      <module-option name="realmName" value="gatein-domain-sample-portal3" />
+      <module-option name="portalContainerName" value="sampleportal3" />
+      <module-option name="realmName" value="gatein-domain-sampleportal3" />
       <module-option name="password-stacking" value="useFirstPass" />
     </login-module>
     <login-module code="org.exoplatform.services.security.j2ee.JBossAS7LoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal3"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal3"/>
+      <module-option name="portalContainerName" value="sampleportal3"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal3"/>
     </login-module>
   </authentication>
 </security-domain>
 
-<!-- Uncommented this when deploying sample-portal4 -->
-<security-domain name="gatein-domain-sample-portal4" cache-type="default">
+<!-- Uncommented this when deploying sampleportal4 -->
+<security-domain name="gatein-domain-sampleportal4" cache-type="default">
   <authentication>
     <login-module code="org.gatein.security.oauth.jaas.OAuthLoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal4"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal4"/>
+      <module-option name="portalContainerName" value="sampleportal4"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal4"/>
     </login-module>
     <login-module code="org.gatein.sso.integration.SSODelegateLoginModule" flag="required">
       <module-option name="enabled" value="#{gatein.sso.login.module.enabled}" />
       <module-option name="delegateClassName" value="#{gatein.sso.login.module.class}" />
-      <module-option name="portalContainerName" value="sample-portal4" />
-      <module-option name="realmName" value="gatein-domain-sample-portal4" />
+      <module-option name="portalContainerName" value="sampleportal4" />
+      <module-option name="realmName" value="gatein-domain-sampleportal4" />
       <module-option name="password-stacking" value="useFirstPass" />
     </login-module>
     <login-module code="org.exoplatform.services.security.j2ee.JBossAS7LoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal4"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal4"/>
+      <module-option name="portalContainerName" value="sampleportal4"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal4"/>
     </login-module>
   </authentication>
 </security-domain>
 
-<!-- Uncommented this when deploying sample-portal5 -->
-<security-domain name="gatein-domain-sample-portal5" cache-type="default">
+<!-- Uncommented this when deploying sampleportal5 -->
+<security-domain name="gatein-domain-sampleportal5" cache-type="default">
   <authentication>
     <login-module code="org.gatein.security.oauth.jaas.OAuthLoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal5"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal5"/>
+      <module-option name="portalContainerName" value="sampleportal5"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal5"/>
     </login-module>
     <login-module code="org.gatein.sso.integration.SSODelegateLoginModule" flag="required">
       <module-option name="enabled" value="#{gatein.sso.login.module.enabled}" />
       <module-option name="delegateClassName" value="#{gatein.sso.login.module.class}" />
-      <module-option name="portalContainerName" value="sample-portal5" />
-      <module-option name="realmName" value="gatein-domain-sample-portal5" />
+      <module-option name="portalContainerName" value="sampleportal5" />
+      <module-option name="realmName" value="gatein-domain-sampleportal5" />
       <module-option name="password-stacking" value="useFirstPass" />
     </login-module>
     <login-module code="org.exoplatform.services.security.j2ee.JBossAS7LoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal5"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal5"/>
+      <module-option name="portalContainerName" value="sampleportal5"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal5"/>
     </login-module>
   </authentication>
 </security-domain>
 
-<!-- Uncommented this when deploying sample-portal6 -->
-<security-domain name="gatein-domain-sample-portal6" cache-type="default">
+<!-- Uncommented this when deploying sampleportal6 -->
+<security-domain name="gatein-domain-sampleportal6" cache-type="default">
   <authentication>
     <login-module code="org.gatein.security.oauth.jaas.OAuthLoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal6"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal6"/>
+      <module-option name="portalContainerName" value="sampleportal6"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal6"/>
     </login-module>
     <login-module code="org.gatein.sso.integration.SSODelegateLoginModule" flag="required">
       <module-option name="enabled" value="#{gatein.sso.login.module.enabled}" />
       <module-option name="delegateClassName" value="#{gatein.sso.login.module.class}" />
-      <module-option name="portalContainerName" value="sample-portal6" />
-      <module-option name="realmName" value="gatein-domain-sample-portal6" />
+      <module-option name="portalContainerName" value="sampleportal6" />
+      <module-option name="realmName" value="gatein-domain-sampleportal6" />
       <module-option name="password-stacking" value="useFirstPass" />
     </login-module>
     <login-module code="org.exoplatform.services.security.j2ee.JBossAS7LoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal6"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal6"/>
+      <module-option name="portalContainerName" value="sampleportal6"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal6"/>
     </login-module>
   </authentication>
 </security-domain>
 
-<!-- Uncommented this when deploying sample-portal7 -->
-<security-domain name="gatein-domain-sample-portal7" cache-type="default">
+<!-- Uncommented this when deploying sampleportal7 -->
+<security-domain name="gatein-domain-sampleportal7" cache-type="default">
   <authentication>
     <login-module code="org.gatein.security.oauth.jaas.OAuthLoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal7"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal7"/>
+      <module-option name="portalContainerName" value="sampleportal7"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal7"/>
     </login-module>
     <login-module code="org.gatein.sso.integration.SSODelegateLoginModule" flag="required">
       <module-option name="enabled" value="#{gatein.sso.login.module.enabled}" />
       <module-option name="delegateClassName" value="#{gatein.sso.login.module.class}" />
-      <module-option name="portalContainerName" value="sample-portal7" />
-      <module-option name="realmName" value="gatein-domain-sample-portal7" />
+      <module-option name="portalContainerName" value="sampleportal7" />
+      <module-option name="realmName" value="gatein-domain-sampleportal7" />
       <module-option name="password-stacking" value="useFirstPass" />
     </login-module>
     <login-module code="org.exoplatform.services.security.j2ee.JBossAS7LoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal7"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal7"/>
+      <module-option name="portalContainerName" value="sampleportal7"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal7"/>
     </login-module>
   </authentication>
 </security-domain>
 
-<!-- Uncommented this when deploying sample-portal8 -->
-<security-domain name="gatein-domain-sample-portal8" cache-type="default">
+<!-- Uncommented this when deploying sampleportal8 -->
+<security-domain name="gatein-domain-sampleportal8" cache-type="default">
   <authentication>
     <login-module code="org.gatein.security.oauth.jaas.OAuthLoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal8"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal8"/>
+      <module-option name="portalContainerName" value="sampleportal8"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal8"/>
     </login-module>
     <login-module code="org.gatein.sso.integration.SSODelegateLoginModule" flag="required">
       <module-option name="enabled" value="#{gatein.sso.login.module.enabled}" />
       <module-option name="delegateClassName" value="#{gatein.sso.login.module.class}" />
-      <module-option name="portalContainerName" value="sample-portal8" />
-      <module-option name="realmName" value="gatein-domain-sample-portal8" />
+      <module-option name="portalContainerName" value="sampleportal8" />
+      <module-option name="realmName" value="gatein-domain-sampleportal8" />
       <module-option name="password-stacking" value="useFirstPass" />
     </login-module>
     <login-module code="org.exoplatform.services.security.j2ee.JBossAS7LoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal8"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal8"/>
+      <module-option name="portalContainerName" value="sampleportal8"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal8"/>
     </login-module>
   </authentication>
 </security-domain>
 
-<!-- Uncommented this when deploying sample-portal9 -->
-<security-domain name="gatein-domain-sample-portal9" cache-type="default">
+<!-- Uncommented this when deploying sampleportal9 -->
+<security-domain name="gatein-domain-sampleportal9" cache-type="default">
   <authentication>
     <login-module code="org.gatein.security.oauth.jaas.OAuthLoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal9"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal9"/>
+      <module-option name="portalContainerName" value="sampleportal9"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal9"/>
     </login-module>
     <login-module code="org.gatein.sso.integration.SSODelegateLoginModule" flag="required">
       <module-option name="enabled" value="#{gatein.sso.login.module.enabled}" />
       <module-option name="delegateClassName" value="#{gatein.sso.login.module.class}" />
-      <module-option name="portalContainerName" value="sample-portal9" />
-      <module-option name="realmName" value="gatein-domain-sample-portal9" />
+      <module-option name="portalContainerName" value="sampleportal9" />
+      <module-option name="realmName" value="gatein-domain-sampleportal9" />
       <module-option name="password-stacking" value="useFirstPass" />
     </login-module>
     <login-module code="org.exoplatform.services.security.j2ee.JBossAS7LoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal9"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal9"/>
+      <module-option name="portalContainerName" value="sampleportal9"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal9"/>
     </login-module>
   </authentication>
 </security-domain>
 
-<!-- Uncommented this when deploying sample-portal10 -->
-<security-domain name="gatein-domain-sample-portal10" cache-type="default">
+<!-- Uncommented this when deploying sampleportal10 -->
+<security-domain name="gatein-domain-sampleportal10" cache-type="default">
   <authentication>
     <login-module code="org.gatein.security.oauth.jaas.OAuthLoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal10"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal10"/>
+      <module-option name="portalContainerName" value="sampleportal10"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal10"/>
     </login-module>
     <login-module code="org.gatein.sso.integration.SSODelegateLoginModule" flag="required">
       <module-option name="enabled" value="#{gatein.sso.login.module.enabled}" />
       <module-option name="delegateClassName" value="#{gatein.sso.login.module.class}" />
-      <module-option name="portalContainerName" value="sample-portal10" />
-      <module-option name="realmName" value="gatein-domain-sample-portal10" />
+      <module-option name="portalContainerName" value="sampleportal10" />
+      <module-option name="realmName" value="gatein-domain-sampleportal10" />
       <module-option name="password-stacking" value="useFirstPass" />
     </login-module>
     <login-module code="org.exoplatform.services.security.j2ee.JBossAS7LoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal10"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal10"/>
+      <module-option name="portalContainerName" value="sampleportal10"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal10"/>
     </login-module>
   </authentication>
 </security-domain>
 
-<!-- Uncommented this when deploying sample-portal11 -->
-<security-domain name="gatein-domain-sample-portal11" cache-type="default">
+<!-- Uncommented this when deploying sampleportal11 -->
+<security-domain name="gatein-domain-sampleportal11" cache-type="default">
   <authentication>
     <login-module code="org.gatein.security.oauth.jaas.OAuthLoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal11"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal11"/>
+      <module-option name="portalContainerName" value="sampleportal11"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal11"/>
     </login-module>
     <login-module code="org.gatein.sso.integration.SSODelegateLoginModule" flag="required">
       <module-option name="enabled" value="#{gatein.sso.login.module.enabled}" />
       <module-option name="delegateClassName" value="#{gatein.sso.login.module.class}" />
-      <module-option name="portalContainerName" value="sample-portal11" />
-      <module-option name="realmName" value="gatein-domain-sample-portal11" />
+      <module-option name="portalContainerName" value="sampleportal11" />
+      <module-option name="realmName" value="gatein-domain-sampleportal11" />
       <module-option name="password-stacking" value="useFirstPass" />
     </login-module>
     <login-module code="org.exoplatform.services.security.j2ee.JBossAS7LoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal11"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal11"/>
+      <module-option name="portalContainerName" value="sampleportal11"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal11"/>
     </login-module>
   </authentication>
 </security-domain>
 
-<!-- Uncommented this when deploying sample-portal12 -->
-<security-domain name="gatein-domain-sample-portal12" cache-type="default">
+<!-- Uncommented this when deploying sampleportal12 -->
+<security-domain name="gatein-domain-sampleportal12" cache-type="default">
   <authentication>
     <login-module code="org.gatein.security.oauth.jaas.OAuthLoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal12"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal12"/>
+      <module-option name="portalContainerName" value="sampleportal12"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal12"/>
     </login-module>
     <login-module code="org.gatein.sso.integration.SSODelegateLoginModule" flag="required">
       <module-option name="enabled" value="#{gatein.sso.login.module.enabled}" />
       <module-option name="delegateClassName" value="#{gatein.sso.login.module.class}" />
-      <module-option name="portalContainerName" value="sample-portal12" />
-      <module-option name="realmName" value="gatein-domain-sample-portal12" />
+      <module-option name="portalContainerName" value="sampleportal12" />
+      <module-option name="realmName" value="gatein-domain-sampleportal12" />
       <module-option name="password-stacking" value="useFirstPass" />
     </login-module>
     <login-module code="org.exoplatform.services.security.j2ee.JBossAS7LoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal12"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal12"/>
+      <module-option name="portalContainerName" value="sampleportal12"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal12"/>
     </login-module>
   </authentication>
 </security-domain>
 
-<!-- Uncommented this when deploying sample-portal13 -->
-<security-domain name="gatein-domain-sample-portal13" cache-type="default">
+<!-- Uncommented this when deploying sampleportal13 -->
+<security-domain name="gatein-domain-sampleportal13" cache-type="default">
   <authentication>
     <login-module code="org.gatein.security.oauth.jaas.OAuthLoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal13"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal13"/>
+      <module-option name="portalContainerName" value="sampleportal13"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal13"/>
     </login-module>
     <login-module code="org.gatein.sso.integration.SSODelegateLoginModule" flag="required">
       <module-option name="enabled" value="#{gatein.sso.login.module.enabled}" />
       <module-option name="delegateClassName" value="#{gatein.sso.login.module.class}" />
-      <module-option name="portalContainerName" value="sample-portal13" />
-      <module-option name="realmName" value="gatein-domain-sample-portal13" />
+      <module-option name="portalContainerName" value="sampleportal13" />
+      <module-option name="realmName" value="gatein-domain-sampleportal13" />
       <module-option name="password-stacking" value="useFirstPass" />
     </login-module>
     <login-module code="org.exoplatform.services.security.j2ee.JBossAS7LoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal13"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal13"/>
+      <module-option name="portalContainerName" value="sampleportal13"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal13"/>
     </login-module>
   </authentication>
 </security-domain>
 
-<!-- Uncommented this when deploying sample-portal14 -->
-<security-domain name="gatein-domain-sample-portal14" cache-type="default">
+<!-- Uncommented this when deploying sampleportal14 -->
+<security-domain name="gatein-domain-sampleportal14" cache-type="default">
   <authentication>
     <login-module code="org.gatein.security.oauth.jaas.OAuthLoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal14"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal14"/>
+      <module-option name="portalContainerName" value="sampleportal14"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal14"/>
     </login-module>
     <login-module code="org.gatein.sso.integration.SSODelegateLoginModule" flag="required">
       <module-option name="enabled" value="#{gatein.sso.login.module.enabled}" />
       <module-option name="delegateClassName" value="#{gatein.sso.login.module.class}" />
-      <module-option name="portalContainerName" value="sample-portal14" />
-      <module-option name="realmName" value="gatein-domain-sample-portal14" />
+      <module-option name="portalContainerName" value="sampleportal14" />
+      <module-option name="realmName" value="gatein-domain-sampleportal14" />
       <module-option name="password-stacking" value="useFirstPass" />
     </login-module>
     <login-module code="org.exoplatform.services.security.j2ee.JBossAS7LoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal14"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal14"/>
+      <module-option name="portalContainerName" value="sampleportal14"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal14"/>
     </login-module>
   </authentication>
 </security-domain>
 
-<!-- Uncommented this when deploying sample-portal15 -->
-<security-domain name="gatein-domain-sample-portal15" cache-type="default">
+<!-- Uncommented this when deploying sampleportal15 -->
+<security-domain name="gatein-domain-sampleportal15" cache-type="default">
   <authentication>
     <login-module code="org.gatein.security.oauth.jaas.OAuthLoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal15"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal15"/>
+      <module-option name="portalContainerName" value="sampleportal15"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal15"/>
     </login-module>
     <login-module code="org.gatein.sso.integration.SSODelegateLoginModule" flag="required">
       <module-option name="enabled" value="#{gatein.sso.login.module.enabled}" />
       <module-option name="delegateClassName" value="#{gatein.sso.login.module.class}" />
-      <module-option name="portalContainerName" value="sample-portal15" />
-      <module-option name="realmName" value="gatein-domain-sample-portal15" />
+      <module-option name="portalContainerName" value="sampleportal15" />
+      <module-option name="realmName" value="gatein-domain-sampleportal15" />
       <module-option name="password-stacking" value="useFirstPass" />
     </login-module>
     <login-module code="org.exoplatform.services.security.j2ee.JBossAS7LoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal15"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal15"/>
+      <module-option name="portalContainerName" value="sampleportal15"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal15"/>
     </login-module>
   </authentication>
 </security-domain>
 
-<!-- Uncommented this when deploying sample-portal16 -->
-<security-domain name="gatein-domain-sample-portal16" cache-type="default">
+<!-- Uncommented this when deploying sampleportal16 -->
+<security-domain name="gatein-domain-sampleportal16" cache-type="default">
   <authentication>
     <login-module code="org.gatein.security.oauth.jaas.OAuthLoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal16"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal16"/>
+      <module-option name="portalContainerName" value="sampleportal16"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal16"/>
     </login-module>
     <login-module code="org.gatein.sso.integration.SSODelegateLoginModule" flag="required">
       <module-option name="enabled" value="#{gatein.sso.login.module.enabled}" />
       <module-option name="delegateClassName" value="#{gatein.sso.login.module.class}" />
-      <module-option name="portalContainerName" value="sample-portal16" />
-      <module-option name="realmName" value="gatein-domain-sample-portal16" />
+      <module-option name="portalContainerName" value="sampleportal16" />
+      <module-option name="realmName" value="gatein-domain-sampleportal16" />
       <module-option name="password-stacking" value="useFirstPass" />
     </login-module>
     <login-module code="org.exoplatform.services.security.j2ee.JBossAS7LoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal16"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal16"/>
+      <module-option name="portalContainerName" value="sampleportal16"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal16"/>
     </login-module>
   </authentication>
 </security-domain>
 
-<!-- Uncommented this when deploying sample-portal17 -->
-<security-domain name="gatein-domain-sample-portal17" cache-type="default">
+<!-- Uncommented this when deploying sampleportal17 -->
+<security-domain name="gatein-domain-sampleportal17" cache-type="default">
   <authentication>
     <login-module code="org.gatein.security.oauth.jaas.OAuthLoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal17"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal17"/>
+      <module-option name="portalContainerName" value="sampleportal17"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal17"/>
     </login-module>
     <login-module code="org.gatein.sso.integration.SSODelegateLoginModule" flag="required">
       <module-option name="enabled" value="#{gatein.sso.login.module.enabled}" />
       <module-option name="delegateClassName" value="#{gatein.sso.login.module.class}" />
-      <module-option name="portalContainerName" value="sample-portal17" />
-      <module-option name="realmName" value="gatein-domain-sample-portal17" />
+      <module-option name="portalContainerName" value="sampleportal17" />
+      <module-option name="realmName" value="gatein-domain-sampleportal17" />
       <module-option name="password-stacking" value="useFirstPass" />
     </login-module>
     <login-module code="org.exoplatform.services.security.j2ee.JBossAS7LoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal17"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal17"/>
+      <module-option name="portalContainerName" value="sampleportal17"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal17"/>
     </login-module>
   </authentication>
 </security-domain>
 
-<!-- Uncommented this when deploying sample-portal18 -->
-<security-domain name="gatein-domain-sample-portal18" cache-type="default">
+<!-- Uncommented this when deploying sampleportal18 -->
+<security-domain name="gatein-domain-sampleportal18" cache-type="default">
   <authentication>
     <login-module code="org.gatein.security.oauth.jaas.OAuthLoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal18"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal18"/>
+      <module-option name="portalContainerName" value="sampleportal18"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal18"/>
     </login-module>
     <login-module code="org.gatein.sso.integration.SSODelegateLoginModule" flag="required">
       <module-option name="enabled" value="#{gatein.sso.login.module.enabled}" />
       <module-option name="delegateClassName" value="#{gatein.sso.login.module.class}" />
-      <module-option name="portalContainerName" value="sample-portal18" />
-      <module-option name="realmName" value="gatein-domain-sample-portal18" />
+      <module-option name="portalContainerName" value="sampleportal18" />
+      <module-option name="realmName" value="gatein-domain-sampleportal18" />
       <module-option name="password-stacking" value="useFirstPass" />
     </login-module>
     <login-module code="org.exoplatform.services.security.j2ee.JBossAS7LoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal18"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal18"/>
+      <module-option name="portalContainerName" value="sampleportal18"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal18"/>
     </login-module>
   </authentication>
 </security-domain>
 
-<!-- Uncommented this when deploying sample-portal19 -->
-<security-domain name="gatein-domain-sample-portal19" cache-type="default">
+<!-- Uncommented this when deploying sampleportal19 -->
+<security-domain name="gatein-domain-sampleportal19" cache-type="default">
   <authentication>
     <login-module code="org.gatein.security.oauth.jaas.OAuthLoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal19"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal19"/>
+      <module-option name="portalContainerName" value="sampleportal19"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal19"/>
     </login-module>
     <login-module code="org.gatein.sso.integration.SSODelegateLoginModule" flag="required">
       <module-option name="enabled" value="#{gatein.sso.login.module.enabled}" />
       <module-option name="delegateClassName" value="#{gatein.sso.login.module.class}" />
-      <module-option name="portalContainerName" value="sample-portal19" />
-      <module-option name="realmName" value="gatein-domain-sample-portal19" />
+      <module-option name="portalContainerName" value="sampleportal19" />
+      <module-option name="realmName" value="gatein-domain-sampleportal19" />
       <module-option name="password-stacking" value="useFirstPass" />
     </login-module>
     <login-module code="org.exoplatform.services.security.j2ee.JBossAS7LoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal19"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal19"/>
+      <module-option name="portalContainerName" value="sampleportal19"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal19"/>
     </login-module>
   </authentication>
 </security-domain>
 
-<!-- Uncommented this when deploying sample-portal20 -->
-<security-domain name="gatein-domain-sample-portal20" cache-type="default">
+<!-- Uncommented this when deploying sampleportal20 -->
+<security-domain name="gatein-domain-sampleportal20" cache-type="default">
   <authentication>
     <login-module code="org.gatein.security.oauth.jaas.OAuthLoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal20"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal20"/>
+      <module-option name="portalContainerName" value="sampleportal20"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal20"/>
     </login-module>
     <login-module code="org.gatein.sso.integration.SSODelegateLoginModule" flag="required">
       <module-option name="enabled" value="#{gatein.sso.login.module.enabled}" />
       <module-option name="delegateClassName" value="#{gatein.sso.login.module.class}" />
-      <module-option name="portalContainerName" value="sample-portal20" />
-      <module-option name="realmName" value="gatein-domain-sample-portal20" />
+      <module-option name="portalContainerName" value="sampleportal20" />
+      <module-option name="realmName" value="gatein-domain-sampleportal20" />
       <module-option name="password-stacking" value="useFirstPass" />
     </login-module>
     <login-module code="org.exoplatform.services.security.j2ee.JBossAS7LoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal20"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal20"/>
+      <module-option name="portalContainerName" value="sampleportal20"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal20"/>
     </login-module>
   </authentication>
 </security-domain>
 
-<!-- Uncommented this when deploying sample-portal21 -->
-<security-domain name="gatein-domain-sample-portal21" cache-type="default">
+<!-- Uncommented this when deploying sampleportal21 -->
+<security-domain name="gatein-domain-sampleportal21" cache-type="default">
   <authentication>
     <login-module code="org.gatein.security.oauth.jaas.OAuthLoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal21"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal21"/>
+      <module-option name="portalContainerName" value="sampleportal21"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal21"/>
     </login-module>
     <login-module code="org.gatein.sso.integration.SSODelegateLoginModule" flag="required">
       <module-option name="enabled" value="#{gatein.sso.login.module.enabled}" />
       <module-option name="delegateClassName" value="#{gatein.sso.login.module.class}" />
-      <module-option name="portalContainerName" value="sample-portal21" />
-      <module-option name="realmName" value="gatein-domain-sample-portal21" />
+      <module-option name="portalContainerName" value="sampleportal21" />
+      <module-option name="realmName" value="gatein-domain-sampleportal21" />
       <module-option name="password-stacking" value="useFirstPass" />
     </login-module>
     <login-module code="org.exoplatform.services.security.j2ee.JBossAS7LoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal21"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal21"/>
+      <module-option name="portalContainerName" value="sampleportal21"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal21"/>
     </login-module>
   </authentication>
 </security-domain>
 
-<!-- Uncommented this when deploying sample-portal22 -->
-<security-domain name="gatein-domain-sample-portal22" cache-type="default">
+<!-- Uncommented this when deploying sampleportal22 -->
+<security-domain name="gatein-domain-sampleportal22" cache-type="default">
   <authentication>
     <login-module code="org.gatein.security.oauth.jaas.OAuthLoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal22"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal22"/>
+      <module-option name="portalContainerName" value="sampleportal22"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal22"/>
     </login-module>
     <login-module code="org.gatein.sso.integration.SSODelegateLoginModule" flag="required">
       <module-option name="enabled" value="#{gatein.sso.login.module.enabled}" />
       <module-option name="delegateClassName" value="#{gatein.sso.login.module.class}" />
-      <module-option name="portalContainerName" value="sample-portal22" />
-      <module-option name="realmName" value="gatein-domain-sample-portal22" />
+      <module-option name="portalContainerName" value="sampleportal22" />
+      <module-option name="realmName" value="gatein-domain-sampleportal22" />
       <module-option name="password-stacking" value="useFirstPass" />
     </login-module>
     <login-module code="org.exoplatform.services.security.j2ee.JBossAS7LoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal22"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal22"/>
+      <module-option name="portalContainerName" value="sampleportal22"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal22"/>
     </login-module>
   </authentication>
 </security-domain>
 
-<!-- Uncommented this when deploying sample-portal23 -->
-<security-domain name="gatein-domain-sample-portal23" cache-type="default">
+<!-- Uncommented this when deploying sampleportal23 -->
+<security-domain name="gatein-domain-sampleportal23" cache-type="default">
   <authentication>
     <login-module code="org.gatein.security.oauth.jaas.OAuthLoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal23"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal23"/>
+      <module-option name="portalContainerName" value="sampleportal23"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal23"/>
     </login-module>
     <login-module code="org.gatein.sso.integration.SSODelegateLoginModule" flag="required">
       <module-option name="enabled" value="#{gatein.sso.login.module.enabled}" />
       <module-option name="delegateClassName" value="#{gatein.sso.login.module.class}" />
-      <module-option name="portalContainerName" value="sample-portal23" />
-      <module-option name="realmName" value="gatein-domain-sample-portal23" />
+      <module-option name="portalContainerName" value="sampleportal23" />
+      <module-option name="realmName" value="gatein-domain-sampleportal23" />
       <module-option name="password-stacking" value="useFirstPass" />
     </login-module>
     <login-module code="org.exoplatform.services.security.j2ee.JBossAS7LoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal23"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal23"/>
+      <module-option name="portalContainerName" value="sampleportal23"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal23"/>
     </login-module>
   </authentication>
 </security-domain>
 
-<!-- Uncommented this when deploying sample-portal24 -->
-<security-domain name="gatein-domain-sample-portal24" cache-type="default">
+<!-- Uncommented this when deploying sampleportal24 -->
+<security-domain name="gatein-domain-sampleportal24" cache-type="default">
   <authentication>
     <login-module code="org.gatein.security.oauth.jaas.OAuthLoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal24"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal24"/>
+      <module-option name="portalContainerName" value="sampleportal24"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal24"/>
     </login-module>
     <login-module code="org.gatein.sso.integration.SSODelegateLoginModule" flag="required">
       <module-option name="enabled" value="#{gatein.sso.login.module.enabled}" />
       <module-option name="delegateClassName" value="#{gatein.sso.login.module.class}" />
-      <module-option name="portalContainerName" value="sample-portal24" />
-      <module-option name="realmName" value="gatein-domain-sample-portal24" />
+      <module-option name="portalContainerName" value="sampleportal24" />
+      <module-option name="realmName" value="gatein-domain-sampleportal24" />
       <module-option name="password-stacking" value="useFirstPass" />
     </login-module>
     <login-module code="org.exoplatform.services.security.j2ee.JBossAS7LoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal24"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal24"/>
+      <module-option name="portalContainerName" value="sampleportal24"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal24"/>
     </login-module>
   </authentication>
 </security-domain>
 
-<!-- Uncommented this when deploying sample-portal25 -->
-<security-domain name="gatein-domain-sample-portal25" cache-type="default">
+<!-- Uncommented this when deploying sampleportal25 -->
+<security-domain name="gatein-domain-sampleportal25" cache-type="default">
   <authentication>
     <login-module code="org.gatein.security.oauth.jaas.OAuthLoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal25"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal25"/>
+      <module-option name="portalContainerName" value="sampleportal25"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal25"/>
     </login-module>
     <login-module code="org.gatein.sso.integration.SSODelegateLoginModule" flag="required">
       <module-option name="enabled" value="#{gatein.sso.login.module.enabled}" />
       <module-option name="delegateClassName" value="#{gatein.sso.login.module.class}" />
-      <module-option name="portalContainerName" value="sample-portal25" />
-      <module-option name="realmName" value="gatein-domain-sample-portal25" />
+      <module-option name="portalContainerName" value="sampleportal25" />
+      <module-option name="realmName" value="gatein-domain-sampleportal25" />
       <module-option name="password-stacking" value="useFirstPass" />
     </login-module>
     <login-module code="org.exoplatform.services.security.j2ee.JBossAS7LoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal25"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal25"/>
+      <module-option name="portalContainerName" value="sampleportal25"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal25"/>
     </login-module>
   </authentication>
 </security-domain>
 
-<!-- Uncommented this when deploying sample-portal26 -->
-<security-domain name="gatein-domain-sample-portal26" cache-type="default">
+<!-- Uncommented this when deploying sampleportal26 -->
+<security-domain name="gatein-domain-sampleportal26" cache-type="default">
   <authentication>
     <login-module code="org.gatein.security.oauth.jaas.OAuthLoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal26"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal26"/>
+      <module-option name="portalContainerName" value="sampleportal26"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal26"/>
     </login-module>
     <login-module code="org.gatein.sso.integration.SSODelegateLoginModule" flag="required">
       <module-option name="enabled" value="#{gatein.sso.login.module.enabled}" />
       <module-option name="delegateClassName" value="#{gatein.sso.login.module.class}" />
-      <module-option name="portalContainerName" value="sample-portal26" />
-      <module-option name="realmName" value="gatein-domain-sample-portal26" />
+      <module-option name="portalContainerName" value="sampleportal26" />
+      <module-option name="realmName" value="gatein-domain-sampleportal26" />
       <module-option name="password-stacking" value="useFirstPass" />
     </login-module>
     <login-module code="org.exoplatform.services.security.j2ee.JBossAS7LoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal26"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal26"/>
+      <module-option name="portalContainerName" value="sampleportal26"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal26"/>
     </login-module>
   </authentication>
 </security-domain>
 
-<!-- Uncommented this when deploying sample-portal27 -->
-<security-domain name="gatein-domain-sample-portal27" cache-type="default">
+<!-- Uncommented this when deploying sampleportal27 -->
+<security-domain name="gatein-domain-sampleportal27" cache-type="default">
   <authentication>
     <login-module code="org.gatein.security.oauth.jaas.OAuthLoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal27"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal27"/>
+      <module-option name="portalContainerName" value="sampleportal27"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal27"/>
     </login-module>
     <login-module code="org.gatein.sso.integration.SSODelegateLoginModule" flag="required">
       <module-option name="enabled" value="#{gatein.sso.login.module.enabled}" />
       <module-option name="delegateClassName" value="#{gatein.sso.login.module.class}" />
-      <module-option name="portalContainerName" value="sample-portal27" />
-      <module-option name="realmName" value="gatein-domain-sample-portal27" />
+      <module-option name="portalContainerName" value="sampleportal27" />
+      <module-option name="realmName" value="gatein-domain-sampleportal27" />
       <module-option name="password-stacking" value="useFirstPass" />
     </login-module>
     <login-module code="org.exoplatform.services.security.j2ee.JBossAS7LoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal27"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal27"/>
+      <module-option name="portalContainerName" value="sampleportal27"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal27"/>
     </login-module>
   </authentication>
 </security-domain>
 
-<!-- Uncommented this when deploying sample-portal28 -->
-<security-domain name="gatein-domain-sample-portal28" cache-type="default">
+<!-- Uncommented this when deploying sampleportal28 -->
+<security-domain name="gatein-domain-sampleportal28" cache-type="default">
   <authentication>
     <login-module code="org.gatein.security.oauth.jaas.OAuthLoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal28"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal28"/>
+      <module-option name="portalContainerName" value="sampleportal28"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal28"/>
     </login-module>
     <login-module code="org.gatein.sso.integration.SSODelegateLoginModule" flag="required">
       <module-option name="enabled" value="#{gatein.sso.login.module.enabled}" />
       <module-option name="delegateClassName" value="#{gatein.sso.login.module.class}" />
-      <module-option name="portalContainerName" value="sample-portal28" />
-      <module-option name="realmName" value="gatein-domain-sample-portal28" />
+      <module-option name="portalContainerName" value="sampleportal28" />
+      <module-option name="realmName" value="gatein-domain-sampleportal28" />
       <module-option name="password-stacking" value="useFirstPass" />
     </login-module>
     <login-module code="org.exoplatform.services.security.j2ee.JBossAS7LoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal28"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal28"/>
+      <module-option name="portalContainerName" value="sampleportal28"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal28"/>
     </login-module>
   </authentication>
 </security-domain>
 
-<!-- Uncommented this when deploying sample-portal29 -->
-<security-domain name="gatein-domain-sample-portal29" cache-type="default">
+<!-- Uncommented this when deploying sampleportal29 -->
+<security-domain name="gatein-domain-sampleportal29" cache-type="default">
   <authentication>
     <login-module code="org.gatein.security.oauth.jaas.OAuthLoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal29"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal29"/>
+      <module-option name="portalContainerName" value="sampleportal29"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal29"/>
     </login-module>
     <login-module code="org.gatein.sso.integration.SSODelegateLoginModule" flag="required">
       <module-option name="enabled" value="#{gatein.sso.login.module.enabled}" />
       <module-option name="delegateClassName" value="#{gatein.sso.login.module.class}" />
-      <module-option name="portalContainerName" value="sample-portal29" />
-      <module-option name="realmName" value="gatein-domain-sample-portal29" />
+      <module-option name="portalContainerName" value="sampleportal29" />
+      <module-option name="realmName" value="gatein-domain-sampleportal29" />
       <module-option name="password-stacking" value="useFirstPass" />
     </login-module>
     <login-module code="org.exoplatform.services.security.j2ee.JBossAS7LoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal29"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal29"/>
+      <module-option name="portalContainerName" value="sampleportal29"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal29"/>
     </login-module>
   </authentication>
 </security-domain>
 
-<!-- Uncommented this when deploying sample-portal30 -->
-<security-domain name="gatein-domain-sample-portal30" cache-type="default">
+<!-- Uncommented this when deploying sampleportal30 -->
+<security-domain name="gatein-domain-sampleportal30" cache-type="default">
   <authentication>
     <login-module code="org.gatein.security.oauth.jaas.OAuthLoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal30"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal30"/>
+      <module-option name="portalContainerName" value="sampleportal30"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal30"/>
     </login-module>
     <login-module code="org.gatein.sso.integration.SSODelegateLoginModule" flag="required">
       <module-option name="enabled" value="#{gatein.sso.login.module.enabled}" />
       <module-option name="delegateClassName" value="#{gatein.sso.login.module.class}" />
-      <module-option name="portalContainerName" value="sample-portal30" />
-      <module-option name="realmName" value="gatein-domain-sample-portal30" />
+      <module-option name="portalContainerName" value="sampleportal30" />
+      <module-option name="realmName" value="gatein-domain-sampleportal30" />
       <module-option name="password-stacking" value="useFirstPass" />
     </login-module>
     <login-module code="org.exoplatform.services.security.j2ee.JBossAS7LoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal30"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal30"/>
+      <module-option name="portalContainerName" value="sampleportal30"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal30"/>
     </login-module>
   </authentication>
 </security-domain>
 
-<!-- Uncommented this when deploying sample-portal31 -->
-<security-domain name="gatein-domain-sample-portal31" cache-type="default">
+<!-- Uncommented this when deploying sampleportal31 -->
+<security-domain name="gatein-domain-sampleportal31" cache-type="default">
   <authentication>
     <login-module code="org.gatein.security.oauth.jaas.OAuthLoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal31"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal31"/>
+      <module-option name="portalContainerName" value="sampleportal31"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal31"/>
     </login-module>
     <login-module code="org.gatein.sso.integration.SSODelegateLoginModule" flag="required">
       <module-option name="enabled" value="#{gatein.sso.login.module.enabled}" />
       <module-option name="delegateClassName" value="#{gatein.sso.login.module.class}" />
-      <module-option name="portalContainerName" value="sample-portal31" />
-      <module-option name="realmName" value="gatein-domain-sample-portal31" />
+      <module-option name="portalContainerName" value="sampleportal31" />
+      <module-option name="realmName" value="gatein-domain-sampleportal31" />
       <module-option name="password-stacking" value="useFirstPass" />
     </login-module>
     <login-module code="org.exoplatform.services.security.j2ee.JBossAS7LoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal31"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal31"/>
+      <module-option name="portalContainerName" value="sampleportal31"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal31"/>
     </login-module>
   </authentication>
 </security-domain>
 
-<!-- Uncommented this when deploying sample-portal32 -->
-<security-domain name="gatein-domain-sample-portal32" cache-type="default">
+<!-- Uncommented this when deploying sampleportal32 -->
+<security-domain name="gatein-domain-sampleportal32" cache-type="default">
   <authentication>
     <login-module code="org.gatein.security.oauth.jaas.OAuthLoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal32"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal32"/>
+      <module-option name="portalContainerName" value="sampleportal32"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal32"/>
     </login-module>
     <login-module code="org.gatein.sso.integration.SSODelegateLoginModule" flag="required">
       <module-option name="enabled" value="#{gatein.sso.login.module.enabled}" />
       <module-option name="delegateClassName" value="#{gatein.sso.login.module.class}" />
-      <module-option name="portalContainerName" value="sample-portal32" />
-      <module-option name="realmName" value="gatein-domain-sample-portal32" />
+      <module-option name="portalContainerName" value="sampleportal32" />
+      <module-option name="realmName" value="gatein-domain-sampleportal32" />
       <module-option name="password-stacking" value="useFirstPass" />
     </login-module>
     <login-module code="org.exoplatform.services.security.j2ee.JBossAS7LoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal32"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal32"/>
+      <module-option name="portalContainerName" value="sampleportal32"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal32"/>
     </login-module>
   </authentication>
 </security-domain>
 
-<!-- Uncommented this when deploying sample-portal33 -->
-<security-domain name="gatein-domain-sample-portal33" cache-type="default">
+<!-- Uncommented this when deploying sampleportal33 -->
+<security-domain name="gatein-domain-sampleportal33" cache-type="default">
   <authentication>
     <login-module code="org.gatein.security.oauth.jaas.OAuthLoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal33"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal33"/>
+      <module-option name="portalContainerName" value="sampleportal33"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal33"/>
     </login-module>
     <login-module code="org.gatein.sso.integration.SSODelegateLoginModule" flag="required">
       <module-option name="enabled" value="#{gatein.sso.login.module.enabled}" />
       <module-option name="delegateClassName" value="#{gatein.sso.login.module.class}" />
-      <module-option name="portalContainerName" value="sample-portal33" />
-      <module-option name="realmName" value="gatein-domain-sample-portal33" />
+      <module-option name="portalContainerName" value="sampleportal33" />
+      <module-option name="realmName" value="gatein-domain-sampleportal33" />
       <module-option name="password-stacking" value="useFirstPass" />
     </login-module>
     <login-module code="org.exoplatform.services.security.j2ee.JBossAS7LoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal33"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal33"/>
+      <module-option name="portalContainerName" value="sampleportal33"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal33"/>
     </login-module>
   </authentication>
 </security-domain>
 
-<!-- Uncommented this when deploying sample-portal34 -->
-<security-domain name="gatein-domain-sample-portal34" cache-type="default">
+<!-- Uncommented this when deploying sampleportal34 -->
+<security-domain name="gatein-domain-sampleportal34" cache-type="default">
   <authentication>
     <login-module code="org.gatein.security.oauth.jaas.OAuthLoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal34"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal34"/>
+      <module-option name="portalContainerName" value="sampleportal34"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal34"/>
     </login-module>
     <login-module code="org.gatein.sso.integration.SSODelegateLoginModule" flag="required">
       <module-option name="enabled" value="#{gatein.sso.login.module.enabled}" />
       <module-option name="delegateClassName" value="#{gatein.sso.login.module.class}" />
-      <module-option name="portalContainerName" value="sample-portal34" />
-      <module-option name="realmName" value="gatein-domain-sample-portal34" />
+      <module-option name="portalContainerName" value="sampleportal34" />
+      <module-option name="realmName" value="gatein-domain-sampleportal34" />
       <module-option name="password-stacking" value="useFirstPass" />
     </login-module>
     <login-module code="org.exoplatform.services.security.j2ee.JBossAS7LoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal34"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal34"/>
+      <module-option name="portalContainerName" value="sampleportal34"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal34"/>
     </login-module>
   </authentication>
 </security-domain>
 
-<!-- Uncommented this when deploying sample-portal35 -->
-<security-domain name="gatein-domain-sample-portal35" cache-type="default">
+<!-- Uncommented this when deploying sampleportal35 -->
+<security-domain name="gatein-domain-sampleportal35" cache-type="default">
   <authentication>
     <login-module code="org.gatein.security.oauth.jaas.OAuthLoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal35"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal35"/>
+      <module-option name="portalContainerName" value="sampleportal35"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal35"/>
     </login-module>
     <login-module code="org.gatein.sso.integration.SSODelegateLoginModule" flag="required">
       <module-option name="enabled" value="#{gatein.sso.login.module.enabled}" />
       <module-option name="delegateClassName" value="#{gatein.sso.login.module.class}" />
-      <module-option name="portalContainerName" value="sample-portal35" />
-      <module-option name="realmName" value="gatein-domain-sample-portal35" />
+      <module-option name="portalContainerName" value="sampleportal35" />
+      <module-option name="realmName" value="gatein-domain-sampleportal35" />
       <module-option name="password-stacking" value="useFirstPass" />
     </login-module>
     <login-module code="org.exoplatform.services.security.j2ee.JBossAS7LoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal35"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal35"/>
+      <module-option name="portalContainerName" value="sampleportal35"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal35"/>
     </login-module>
   </authentication>
 </security-domain>
 
-<!-- Uncommented this when deploying sample-portal36 -->
-<security-domain name="gatein-domain-sample-portal36" cache-type="default">
+<!-- Uncommented this when deploying sampleportal36 -->
+<security-domain name="gatein-domain-sampleportal36" cache-type="default">
   <authentication>
     <login-module code="org.gatein.security.oauth.jaas.OAuthLoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal36"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal36"/>
+      <module-option name="portalContainerName" value="sampleportal36"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal36"/>
     </login-module>
     <login-module code="org.gatein.sso.integration.SSODelegateLoginModule" flag="required">
       <module-option name="enabled" value="#{gatein.sso.login.module.enabled}" />
       <module-option name="delegateClassName" value="#{gatein.sso.login.module.class}" />
-      <module-option name="portalContainerName" value="sample-portal36" />
-      <module-option name="realmName" value="gatein-domain-sample-portal36" />
+      <module-option name="portalContainerName" value="sampleportal36" />
+      <module-option name="realmName" value="gatein-domain-sampleportal36" />
       <module-option name="password-stacking" value="useFirstPass" />
     </login-module>
     <login-module code="org.exoplatform.services.security.j2ee.JBossAS7LoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal36"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal36"/>
+      <module-option name="portalContainerName" value="sampleportal36"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal36"/>
     </login-module>
   </authentication>
 </security-domain>
 
-<!-- Uncommented this when deploying sample-portal37 -->
-<security-domain name="gatein-domain-sample-portal37" cache-type="default">
+<!-- Uncommented this when deploying sampleportal37 -->
+<security-domain name="gatein-domain-sampleportal37" cache-type="default">
   <authentication>
     <login-module code="org.gatein.security.oauth.jaas.OAuthLoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal37"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal37"/>
+      <module-option name="portalContainerName" value="sampleportal37"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal37"/>
     </login-module>
     <login-module code="org.gatein.sso.integration.SSODelegateLoginModule" flag="required">
       <module-option name="enabled" value="#{gatein.sso.login.module.enabled}" />
       <module-option name="delegateClassName" value="#{gatein.sso.login.module.class}" />
-      <module-option name="portalContainerName" value="sample-portal37" />
-      <module-option name="realmName" value="gatein-domain-sample-portal37" />
+      <module-option name="portalContainerName" value="sampleportal37" />
+      <module-option name="realmName" value="gatein-domain-sampleportal37" />
       <module-option name="password-stacking" value="useFirstPass" />
     </login-module>
     <login-module code="org.exoplatform.services.security.j2ee.JBossAS7LoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal37"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal37"/>
+      <module-option name="portalContainerName" value="sampleportal37"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal37"/>
     </login-module>
   </authentication>
 </security-domain>
 
-<!-- Uncommented this when deploying sample-portal38 -->
-<security-domain name="gatein-domain-sample-portal38" cache-type="default">
+<!-- Uncommented this when deploying sampleportal38 -->
+<security-domain name="gatein-domain-sampleportal38" cache-type="default">
   <authentication>
     <login-module code="org.gatein.security.oauth.jaas.OAuthLoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal38"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal38"/>
+      <module-option name="portalContainerName" value="sampleportal38"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal38"/>
     </login-module>
     <login-module code="org.gatein.sso.integration.SSODelegateLoginModule" flag="required">
       <module-option name="enabled" value="#{gatein.sso.login.module.enabled}" />
       <module-option name="delegateClassName" value="#{gatein.sso.login.module.class}" />
-      <module-option name="portalContainerName" value="sample-portal38" />
-      <module-option name="realmName" value="gatein-domain-sample-portal38" />
+      <module-option name="portalContainerName" value="sampleportal38" />
+      <module-option name="realmName" value="gatein-domain-sampleportal38" />
       <module-option name="password-stacking" value="useFirstPass" />
     </login-module>
     <login-module code="org.exoplatform.services.security.j2ee.JBossAS7LoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal38"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal38"/>
+      <module-option name="portalContainerName" value="sampleportal38"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal38"/>
     </login-module>
   </authentication>
 </security-domain>
 
-<!-- Uncommented this when deploying sample-portal39 -->
-<security-domain name="gatein-domain-sample-portal39" cache-type="default">
+<!-- Uncommented this when deploying sampleportal39 -->
+<security-domain name="gatein-domain-sampleportal39" cache-type="default">
   <authentication>
     <login-module code="org.gatein.security.oauth.jaas.OAuthLoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal39"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal39"/>
+      <module-option name="portalContainerName" value="sampleportal39"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal39"/>
     </login-module>
     <login-module code="org.gatein.sso.integration.SSODelegateLoginModule" flag="required">
       <module-option name="enabled" value="#{gatein.sso.login.module.enabled}" />
       <module-option name="delegateClassName" value="#{gatein.sso.login.module.class}" />
-      <module-option name="portalContainerName" value="sample-portal39" />
-      <module-option name="realmName" value="gatein-domain-sample-portal39" />
+      <module-option name="portalContainerName" value="sampleportal39" />
+      <module-option name="realmName" value="gatein-domain-sampleportal39" />
       <module-option name="password-stacking" value="useFirstPass" />
     </login-module>
     <login-module code="org.exoplatform.services.security.j2ee.JBossAS7LoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal39"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal39"/>
+      <module-option name="portalContainerName" value="sampleportal39"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal39"/>
     </login-module>
   </authentication>
 </security-domain>
 
-<!-- Uncommented this when deploying sample-portal40 -->
-<security-domain name="gatein-domain-sample-portal40" cache-type="default">
+<!-- Uncommented this when deploying sampleportal40 -->
+<security-domain name="gatein-domain-sampleportal40" cache-type="default">
   <authentication>
     <login-module code="org.gatein.security.oauth.jaas.OAuthLoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal40"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal40"/>
+      <module-option name="portalContainerName" value="sampleportal40"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal40"/>
     </login-module>
     <login-module code="org.gatein.sso.integration.SSODelegateLoginModule" flag="required">
       <module-option name="enabled" value="#{gatein.sso.login.module.enabled}" />
       <module-option name="delegateClassName" value="#{gatein.sso.login.module.class}" />
-      <module-option name="portalContainerName" value="sample-portal40" />
-      <module-option name="realmName" value="gatein-domain-sample-portal40" />
+      <module-option name="portalContainerName" value="sampleportal40" />
+      <module-option name="realmName" value="gatein-domain-sampleportal40" />
       <module-option name="password-stacking" value="useFirstPass" />
     </login-module>
     <login-module code="org.exoplatform.services.security.j2ee.JBossAS7LoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal40"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal40"/>
+      <module-option name="portalContainerName" value="sampleportal40"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal40"/>
     </login-module>
   </authentication>
 </security-domain>
 
-<!-- Uncommented this when deploying sample-portal41 -->
-<security-domain name="gatein-domain-sample-portal41" cache-type="default">
+<!-- Uncommented this when deploying sampleportal41 -->
+<security-domain name="gatein-domain-sampleportal41" cache-type="default">
   <authentication>
     <login-module code="org.gatein.security.oauth.jaas.OAuthLoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal41"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal41"/>
+      <module-option name="portalContainerName" value="sampleportal41"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal41"/>
     </login-module>
     <login-module code="org.gatein.sso.integration.SSODelegateLoginModule" flag="required">
       <module-option name="enabled" value="#{gatein.sso.login.module.enabled}" />
       <module-option name="delegateClassName" value="#{gatein.sso.login.module.class}" />
-      <module-option name="portalContainerName" value="sample-portal41" />
-      <module-option name="realmName" value="gatein-domain-sample-portal41" />
+      <module-option name="portalContainerName" value="sampleportal41" />
+      <module-option name="realmName" value="gatein-domain-sampleportal41" />
       <module-option name="password-stacking" value="useFirstPass" />
     </login-module>
     <login-module code="org.exoplatform.services.security.j2ee.JBossAS7LoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal41"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal41"/>
+      <module-option name="portalContainerName" value="sampleportal41"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal41"/>
     </login-module>
   </authentication>
 </security-domain>
 
-<!-- Uncommented this when deploying sample-portal42 -->
-<security-domain name="gatein-domain-sample-portal42" cache-type="default">
+<!-- Uncommented this when deploying sampleportal42 -->
+<security-domain name="gatein-domain-sampleportal42" cache-type="default">
   <authentication>
     <login-module code="org.gatein.security.oauth.jaas.OAuthLoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal42"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal42"/>
+      <module-option name="portalContainerName" value="sampleportal42"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal42"/>
     </login-module>
     <login-module code="org.gatein.sso.integration.SSODelegateLoginModule" flag="required">
       <module-option name="enabled" value="#{gatein.sso.login.module.enabled}" />
       <module-option name="delegateClassName" value="#{gatein.sso.login.module.class}" />
-      <module-option name="portalContainerName" value="sample-portal42" />
-      <module-option name="realmName" value="gatein-domain-sample-portal42" />
+      <module-option name="portalContainerName" value="sampleportal42" />
+      <module-option name="realmName" value="gatein-domain-sampleportal42" />
       <module-option name="password-stacking" value="useFirstPass" />
     </login-module>
     <login-module code="org.exoplatform.services.security.j2ee.JBossAS7LoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal42"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal42"/>
+      <module-option name="portalContainerName" value="sampleportal42"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal42"/>
     </login-module>
   </authentication>
 </security-domain>
 
-<!-- Uncommented this when deploying sample-portal43 -->
-<security-domain name="gatein-domain-sample-portal43" cache-type="default">
+<!-- Uncommented this when deploying sampleportal43 -->
+<security-domain name="gatein-domain-sampleportal43" cache-type="default">
   <authentication>
     <login-module code="org.gatein.security.oauth.jaas.OAuthLoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal43"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal43"/>
+      <module-option name="portalContainerName" value="sampleportal43"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal43"/>
     </login-module>
     <login-module code="org.gatein.sso.integration.SSODelegateLoginModule" flag="required">
       <module-option name="enabled" value="#{gatein.sso.login.module.enabled}" />
       <module-option name="delegateClassName" value="#{gatein.sso.login.module.class}" />
-      <module-option name="portalContainerName" value="sample-portal43" />
-      <module-option name="realmName" value="gatein-domain-sample-portal43" />
+      <module-option name="portalContainerName" value="sampleportal43" />
+      <module-option name="realmName" value="gatein-domain-sampleportal43" />
       <module-option name="password-stacking" value="useFirstPass" />
     </login-module>
     <login-module code="org.exoplatform.services.security.j2ee.JBossAS7LoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal43"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal43"/>
+      <module-option name="portalContainerName" value="sampleportal43"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal43"/>
     </login-module>
   </authentication>
 </security-domain>
 
-<!-- Uncommented this when deploying sample-portal44 -->
-<security-domain name="gatein-domain-sample-portal44" cache-type="default">
+<!-- Uncommented this when deploying sampleportal44 -->
+<security-domain name="gatein-domain-sampleportal44" cache-type="default">
   <authentication>
     <login-module code="org.gatein.security.oauth.jaas.OAuthLoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal44"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal44"/>
+      <module-option name="portalContainerName" value="sampleportal44"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal44"/>
     </login-module>
     <login-module code="org.gatein.sso.integration.SSODelegateLoginModule" flag="required">
       <module-option name="enabled" value="#{gatein.sso.login.module.enabled}" />
       <module-option name="delegateClassName" value="#{gatein.sso.login.module.class}" />
-      <module-option name="portalContainerName" value="sample-portal44" />
-      <module-option name="realmName" value="gatein-domain-sample-portal44" />
+      <module-option name="portalContainerName" value="sampleportal44" />
+      <module-option name="realmName" value="gatein-domain-sampleportal44" />
       <module-option name="password-stacking" value="useFirstPass" />
     </login-module>
     <login-module code="org.exoplatform.services.security.j2ee.JBossAS7LoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal44"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal44"/>
+      <module-option name="portalContainerName" value="sampleportal44"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal44"/>
     </login-module>
   </authentication>
 </security-domain>
 
-<!-- Uncommented this when deploying sample-portal45 -->
-<security-domain name="gatein-domain-sample-portal45" cache-type="default">
+<!-- Uncommented this when deploying sampleportal45 -->
+<security-domain name="gatein-domain-sampleportal45" cache-type="default">
   <authentication>
     <login-module code="org.gatein.security.oauth.jaas.OAuthLoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal45"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal45"/>
+      <module-option name="portalContainerName" value="sampleportal45"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal45"/>
     </login-module>
     <login-module code="org.gatein.sso.integration.SSODelegateLoginModule" flag="required">
       <module-option name="enabled" value="#{gatein.sso.login.module.enabled}" />
       <module-option name="delegateClassName" value="#{gatein.sso.login.module.class}" />
-      <module-option name="portalContainerName" value="sample-portal45" />
-      <module-option name="realmName" value="gatein-domain-sample-portal45" />
+      <module-option name="portalContainerName" value="sampleportal45" />
+      <module-option name="realmName" value="gatein-domain-sampleportal45" />
       <module-option name="password-stacking" value="useFirstPass" />
     </login-module>
     <login-module code="org.exoplatform.services.security.j2ee.JBossAS7LoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal45"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal45"/>
+      <module-option name="portalContainerName" value="sampleportal45"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal45"/>
     </login-module>
   </authentication>
 </security-domain>
 
-<!-- Uncommented this when deploying sample-portal46 -->
-<security-domain name="gatein-domain-sample-portal46" cache-type="default">
+<!-- Uncommented this when deploying sampleportal46 -->
+<security-domain name="gatein-domain-sampleportal46" cache-type="default">
   <authentication>
     <login-module code="org.gatein.security.oauth.jaas.OAuthLoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal46"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal46"/>
+      <module-option name="portalContainerName" value="sampleportal46"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal46"/>
     </login-module>
     <login-module code="org.gatein.sso.integration.SSODelegateLoginModule" flag="required">
       <module-option name="enabled" value="#{gatein.sso.login.module.enabled}" />
       <module-option name="delegateClassName" value="#{gatein.sso.login.module.class}" />
-      <module-option name="portalContainerName" value="sample-portal46" />
-      <module-option name="realmName" value="gatein-domain-sample-portal46" />
+      <module-option name="portalContainerName" value="sampleportal46" />
+      <module-option name="realmName" value="gatein-domain-sampleportal46" />
       <module-option name="password-stacking" value="useFirstPass" />
     </login-module>
     <login-module code="org.exoplatform.services.security.j2ee.JBossAS7LoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal46"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal46"/>
+      <module-option name="portalContainerName" value="sampleportal46"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal46"/>
     </login-module>
   </authentication>
 </security-domain>
 
-<!-- Uncommented this when deploying sample-portal47 -->
-<security-domain name="gatein-domain-sample-portal47" cache-type="default">
+<!-- Uncommented this when deploying sampleportal47 -->
+<security-domain name="gatein-domain-sampleportal47" cache-type="default">
   <authentication>
     <login-module code="org.gatein.security.oauth.jaas.OAuthLoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal47"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal47"/>
+      <module-option name="portalContainerName" value="sampleportal47"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal47"/>
     </login-module>
     <login-module code="org.gatein.sso.integration.SSODelegateLoginModule" flag="required">
       <module-option name="enabled" value="#{gatein.sso.login.module.enabled}" />
       <module-option name="delegateClassName" value="#{gatein.sso.login.module.class}" />
-      <module-option name="portalContainerName" value="sample-portal47" />
-      <module-option name="realmName" value="gatein-domain-sample-portal47" />
+      <module-option name="portalContainerName" value="sampleportal47" />
+      <module-option name="realmName" value="gatein-domain-sampleportal47" />
       <module-option name="password-stacking" value="useFirstPass" />
     </login-module>
     <login-module code="org.exoplatform.services.security.j2ee.JBossAS7LoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal47"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal47"/>
+      <module-option name="portalContainerName" value="sampleportal47"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal47"/>
     </login-module>
   </authentication>
 </security-domain>
 
-<!-- Uncommented this when deploying sample-portal48 -->
-<security-domain name="gatein-domain-sample-portal48" cache-type="default">
+<!-- Uncommented this when deploying sampleportal48 -->
+<security-domain name="gatein-domain-sampleportal48" cache-type="default">
   <authentication>
     <login-module code="org.gatein.security.oauth.jaas.OAuthLoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal48"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal48"/>
+      <module-option name="portalContainerName" value="sampleportal48"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal48"/>
     </login-module>
     <login-module code="org.gatein.sso.integration.SSODelegateLoginModule" flag="required">
       <module-option name="enabled" value="#{gatein.sso.login.module.enabled}" />
       <module-option name="delegateClassName" value="#{gatein.sso.login.module.class}" />
-      <module-option name="portalContainerName" value="sample-portal48" />
-      <module-option name="realmName" value="gatein-domain-sample-portal48" />
+      <module-option name="portalContainerName" value="sampleportal48" />
+      <module-option name="realmName" value="gatein-domain-sampleportal48" />
       <module-option name="password-stacking" value="useFirstPass" />
     </login-module>
     <login-module code="org.exoplatform.services.security.j2ee.JBossAS7LoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal48"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal48"/>
+      <module-option name="portalContainerName" value="sampleportal48"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal48"/>
     </login-module>
   </authentication>
 </security-domain>
 
-<!-- Uncommented this when deploying sample-portal49 -->
-<security-domain name="gatein-domain-sample-portal49" cache-type="default">
+<!-- Uncommented this when deploying sampleportal49 -->
+<security-domain name="gatein-domain-sampleportal49" cache-type="default">
   <authentication>
     <login-module code="org.gatein.security.oauth.jaas.OAuthLoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal49"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal49"/>
+      <module-option name="portalContainerName" value="sampleportal49"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal49"/>
     </login-module>
     <login-module code="org.gatein.sso.integration.SSODelegateLoginModule" flag="required">
       <module-option name="enabled" value="#{gatein.sso.login.module.enabled}" />
       <module-option name="delegateClassName" value="#{gatein.sso.login.module.class}" />
-      <module-option name="portalContainerName" value="sample-portal49" />
-      <module-option name="realmName" value="gatein-domain-sample-portal49" />
+      <module-option name="portalContainerName" value="sampleportal49" />
+      <module-option name="realmName" value="gatein-domain-sampleportal49" />
       <module-option name="password-stacking" value="useFirstPass" />
     </login-module>
     <login-module code="org.exoplatform.services.security.j2ee.JBossAS7LoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal49"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal49"/>
+      <module-option name="portalContainerName" value="sampleportal49"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal49"/>
     </login-module>
   </authentication>
 </security-domain>
 
-<!-- Uncommented this when deploying sample-portal50 -->
-<security-domain name="gatein-domain-sample-portal50" cache-type="default">
+<!-- Uncommented this when deploying sampleportal50 -->
+<security-domain name="gatein-domain-sampleportal50" cache-type="default">
   <authentication>
     <login-module code="org.gatein.security.oauth.jaas.OAuthLoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal50"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal50"/>
+      <module-option name="portalContainerName" value="sampleportal50"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal50"/>
     </login-module>
     <login-module code="org.gatein.sso.integration.SSODelegateLoginModule" flag="required">
       <module-option name="enabled" value="#{gatein.sso.login.module.enabled}" />
       <module-option name="delegateClassName" value="#{gatein.sso.login.module.class}" />
-      <module-option name="portalContainerName" value="sample-portal50" />
-      <module-option name="realmName" value="gatein-domain-sample-portal50" />
+      <module-option name="portalContainerName" value="sampleportal50" />
+      <module-option name="realmName" value="gatein-domain-sampleportal50" />
       <module-option name="password-stacking" value="useFirstPass" />
     </login-module>
     <login-module code="org.exoplatform.services.security.j2ee.JBossAS7LoginModule" flag="required">
-      <module-option name="portalContainerName" value="sample-portal50"/>
-      <module-option name="realmName" value="gatein-domain-sample-portal50"/>
+      <module-option name="portalContainerName" value="sampleportal50"/>
+      <module-option name="realmName" value="gatein-domain-sampleportal50"/>
     </login-module>
   </authentication>
 </security-domain>

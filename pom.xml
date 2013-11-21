@@ -10,7 +10,7 @@
   <description>Test with many-portal-containers</description>
 
   <modules>
-    <module>sample-portal1</module>
+    <module>sampleportal1</module>
   </modules>
 
 </project>

@@ -1,6 +1,6 @@
 
-<!-- Uncommented this when deploying sample-portal1 -->
-<datasource jndi-name="java:/jdbcidm_sample-portal1" pool-name="IDMsample-portal1" enabled="true" use-java-context="true">
+<!-- Uncommented this when deploying sampleportal1 -->
+<datasource jndi-name="java:/jdbcidm_sampleportal1" pool-name="IDMsampleportal1" enabled="true" use-java-context="true">
   <connection-url>jdbc:mysql://localhost/sampleportal1</connection-url>
   <driver>mysql</driver>
   <security>
@@ -18,7 +18,7 @@
     <share-prepared-statements>true</share-prepared-statements>
   </statement>
 </datasource>
-<datasource jndi-name="java:/jdbcjcr_sample-portal1" pool-name="JCRsample-portal1" enabled="true" use-java-context="true">
+<datasource jndi-name="java:/jdbcjcr_sampleportal1" pool-name="JCRsampleportal1" enabled="true" use-java-context="true">
   <connection-url>jdbc:mysql://localhost/sampleportal1</connection-url>
   <driver>mysql</driver>
   <security>
@@ -37,8 +37,8 @@
   </statement>
 </datasource>
 
-<!-- Uncommented this when deploying sample-portal2 -->
-<datasource jndi-name="java:/jdbcidm_sample-portal2" pool-name="IDMsample-portal2" enabled="true" use-java-context="true">
+<!-- Uncommented this when deploying sampleportal2 -->
+<datasource jndi-name="java:/jdbcidm_sampleportal2" pool-name="IDMsampleportal2" enabled="true" use-java-context="true">
   <connection-url>jdbc:mysql://localhost/sampleportal2</connection-url>
   <driver>mysql</driver>
   <security>
@@ -56,7 +56,7 @@
     <share-prepared-statements>true</share-prepared-statements>
   </statement>
 </datasource>
-<datasource jndi-name="java:/jdbcjcr_sample-portal2" pool-name="JCRsample-portal2" enabled="true" use-java-context="true">
+<datasource jndi-name="java:/jdbcjcr_sampleportal2" pool-name="JCRsampleportal2" enabled="true" use-java-context="true">
   <connection-url>jdbc:mysql://localhost/sampleportal2</connection-url>
   <driver>mysql</driver>
   <security>
@@ -75,8 +75,8 @@
   </statement>
 </datasource>
 
-<!-- Uncommented this when deploying sample-portal3 -->
-<datasource jndi-name="java:/jdbcidm_sample-portal3" pool-name="IDMsample-portal3" enabled="true" use-java-context="true">
+<!-- Uncommented this when deploying sampleportal3 -->
+<datasource jndi-name="java:/jdbcidm_sampleportal3" pool-name="IDMsampleportal3" enabled="true" use-java-context="true">
   <connection-url>jdbc:mysql://localhost/sampleportal3</connection-url>
   <driver>mysql</driver>
   <security>
@@ -94,7 +94,7 @@
     <share-prepared-statements>true</share-prepared-statements>
   </statement>
 </datasource>
-<datasource jndi-name="java:/jdbcjcr_sample-portal3" pool-name="JCRsample-portal3" enabled="true" use-java-context="true">
+<datasource jndi-name="java:/jdbcjcr_sampleportal3" pool-name="JCRsampleportal3" enabled="true" use-java-context="true">
   <connection-url>jdbc:mysql://localhost/sampleportal3</connection-url>
   <driver>mysql</driver>
   <security>
@@ -113,8 +113,8 @@
   </statement>
 </datasource>
 
-<!-- Uncommented this when deploying sample-portal4 -->
-<datasource jndi-name="java:/jdbcidm_sample-portal4" pool-name="IDMsample-portal4" enabled="true" use-java-context="true">
+<!-- Uncommented this when deploying sampleportal4 -->
+<datasource jndi-name="java:/jdbcidm_sampleportal4" pool-name="IDMsampleportal4" enabled="true" use-java-context="true">
   <connection-url>jdbc:mysql://localhost/sampleportal4</connection-url>
   <driver>mysql</driver>
   <security>
@@ -132,7 +132,7 @@
     <share-prepared-statements>true</share-prepared-statements>
   </statement>
 </datasource>
-<datasource jndi-name="java:/jdbcjcr_sample-portal4" pool-name="JCRsample-portal4" enabled="true" use-java-context="true">
+<datasource jndi-name="java:/jdbcjcr_sampleportal4" pool-name="JCRsampleportal4" enabled="true" use-java-context="true">
   <connection-url>jdbc:mysql://localhost/sampleportal4</connection-url>
   <driver>mysql</driver>
   <security>
@@ -151,8 +151,8 @@
   </statement>
 </datasource>
 
-<!-- Uncommented this when deploying sample-portal5 -->
-<datasource jndi-name="java:/jdbcidm_sample-portal5" pool-name="IDMsample-portal5" enabled="true" use-java-context="true">
+<!-- Uncommented this when deploying sampleportal5 -->
+<datasource jndi-name="java:/jdbcidm_sampleportal5" pool-name="IDMsampleportal5" enabled="true" use-java-context="true">
   <connection-url>jdbc:mysql://localhost/sampleportal5</connection-url>
   <driver>mysql</driver>
   <security>
@@ -170,7 +170,7 @@
     <share-prepared-statements>true</share-prepared-statements>
   </statement>
 </datasource>
-<datasource jndi-name="java:/jdbcjcr_sample-portal5" pool-name="JCRsample-portal5" enabled="true" use-java-context="true">
+<datasource jndi-name="java:/jdbcjcr_sampleportal5" pool-name="JCRsampleportal5" enabled="true" use-java-context="true">
   <connection-url>jdbc:mysql://localhost/sampleportal5</connection-url>
   <driver>mysql</driver>
   <security>
@@ -189,8 +189,8 @@
   </statement>
 </datasource>
 
-<!-- Uncommented this when deploying sample-portal6 -->
-<datasource jndi-name="java:/jdbcidm_sample-portal6" pool-name="IDMsample-portal6" enabled="true" use-java-context="true">
+<!-- Uncommented this when deploying sampleportal6 -->
+<datasource jndi-name="java:/jdbcidm_sampleportal6" pool-name="IDMsampleportal6" enabled="true" use-java-context="true">
   <connection-url>jdbc:mysql://localhost/sampleportal6</connection-url>
   <driver>mysql</driver>
   <security>
@@ -208,7 +208,7 @@
     <share-prepared-statements>true</share-prepared-statements>
   </statement>
 </datasource>
-<datasource jndi-name="java:/jdbcjcr_sample-portal6" pool-name="JCRsample-portal6" enabled="true" use-java-context="true">
+<datasource jndi-name="java:/jdbcjcr_sampleportal6" pool-name="JCRsampleportal6" enabled="true" use-java-context="true">
   <connection-url>jdbc:mysql://localhost/sampleportal6</connection-url>
   <driver>mysql</driver>
   <security>
@@ -227,8 +227,8 @@
   </statement>
 </datasource>
 
-<!-- Uncommented this when deploying sample-portal7 -->
-<datasource jndi-name="java:/jdbcidm_sample-portal7" pool-name="IDMsample-portal7" enabled="true" use-java-context="true">
+<!-- Uncommented this when deploying sampleportal7 -->
+<datasource jndi-name="java:/jdbcidm_sampleportal7" pool-name="IDMsampleportal7" enabled="true" use-java-context="true">
   <connection-url>jdbc:mysql://localhost/sampleportal7</connection-url>
   <driver>mysql</driver>
   <security>
@@ -246,7 +246,7 @@
     <share-prepared-statements>true</share-prepared-statements>
   </statement>
 </datasource>
-<datasource jndi-name="java:/jdbcjcr_sample-portal7" pool-name="JCRsample-portal7" enabled="true" use-java-context="true">
+<datasource jndi-name="java:/jdbcjcr_sampleportal7" pool-name="JCRsampleportal7" enabled="true" use-java-context="true">
   <connection-url>jdbc:mysql://localhost/sampleportal7</connection-url>
   <driver>mysql</driver>
   <security>
@@ -265,8 +265,8 @@
   </statement>
 </datasource>
 
-<!-- Uncommented this when deploying sample-portal8 -->
-<datasource jndi-name="java:/jdbcidm_sample-portal8" pool-name="IDMsample-portal8" enabled="true" use-java-context="true">
+<!-- Uncommented this when deploying sampleportal8 -->
+<datasource jndi-name="java:/jdbcidm_sampleportal8" pool-name="IDMsampleportal8" enabled="true" use-java-context="true">
   <connection-url>jdbc:mysql://localhost/sampleportal8</connection-url>
   <driver>mysql</driver>
   <security>
@@ -284,7 +284,7 @@
     <share-prepared-statements>true</share-prepared-statements>
   </statement>
 </datasource>
-<datasource jndi-name="java:/jdbcjcr_sample-portal8" pool-name="JCRsample-portal8" enabled="true" use-java-context="true">
+<datasource jndi-name="java:/jdbcjcr_sampleportal8" pool-name="JCRsampleportal8" enabled="true" use-java-context="true">
   <connection-url>jdbc:mysql://localhost/sampleportal8</connection-url>
   <driver>mysql</driver>
   <security>
@@ -303,8 +303,8 @@
   </statement>
 </datasource>
 
-<!-- Uncommented this when deploying sample-portal9 -->
-<datasource jndi-name="java:/jdbcidm_sample-portal9" pool-name="IDMsample-portal9" enabled="true" use-java-context="true">
+<!-- Uncommented this when deploying sampleportal9 -->
+<datasource jndi-name="java:/jdbcidm_sampleportal9" pool-name="IDMsampleportal9" enabled="true" use-java-context="true">
   <connection-url>jdbc:mysql://localhost/sampleportal9</connection-url>
   <driver>mysql</driver>
   <security>
@@ -322,7 +322,7 @@
     <share-prepared-statements>true</share-prepared-statements>
   </statement>
 </datasource>
-<datasource jndi-name="java:/jdbcjcr_sample-portal9" pool-name="JCRsample-portal9" enabled="true" use-java-context="true">
+<datasource jndi-name="java:/jdbcjcr_sampleportal9" pool-name="JCRsampleportal9" enabled="true" use-java-context="true">
   <connection-url>jdbc:mysql://localhost/sampleportal9</connection-url>
   <driver>mysql</driver>
   <security>
@@ -341,8 +341,8 @@
   </statement>
 </datasource>
 
-<!-- Uncommented this when deploying sample-portal10 -->
-<datasource jndi-name="java:/jdbcidm_sample-portal10" pool-name="IDMsample-portal10" enabled="true" use-java-context="true">
+<!-- Uncommented this when deploying sampleportal10 -->
+<datasource jndi-name="java:/jdbcidm_sampleportal10" pool-name="IDMsampleportal10" enabled="true" use-java-context="true">
   <connection-url>jdbc:mysql://localhost/sampleportal10</connection-url>
   <driver>mysql</driver>
   <security>
@@ -360,7 +360,7 @@
     <share-prepared-statements>true</share-prepared-statements>
   </statement>
 </datasource>
-<datasource jndi-name="java:/jdbcjcr_sample-portal10" pool-name="JCRsample-portal10" enabled="true" use-java-context="true">
+<datasource jndi-name="java:/jdbcjcr_sampleportal10" pool-name="JCRsampleportal10" enabled="true" use-java-context="true">
   <connection-url>jdbc:mysql://localhost/sampleportal10</connection-url>
   <driver>mysql</driver>
   <security>

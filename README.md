@@ -59,11 +59,11 @@ EXAMPLE STEPS FOR CREATE AND DEPLOY 10 SAMPLE CONTAINERS:
         	   </statement>
                 </datasource>
 
-3) Run script "scripts/mysql-refresh.sh 10". Then login into MySQL and copy output of the script into MySQL console. That will drop and create all databases needed for sample-portals
+3) Run script "scripts/mysql-refresh.sh 10". Then login into MySQL and copy output of the script into MySQL console. That will drop and create all databases needed for sample portals
 
-4) Run script "scripts/create-ears.sh 1 10". This will create 10 EARS with sample-portal in current directory.
+4) Run script "scripts/create-ears.sh 1 10". This will create 10 EARS with sampleportal in current directory.
 
-5) Run command "mv sample-portal*.ear $GATEIN_HOME/gatein/extensions/" . $GATEIN_HOME should point to your GateIn directory.
+5) Run command "mv sampleportal*.ear $GATEIN_HOME/gatein/extensions/" . $GATEIN_HOME should point to your GateIn directory.
 
 6) Run script "scripts/create-xml-from-template.sh datasources-xml 10"
 Then copy the content of the file datasources-xml-10 into appropriate section of GATEIN_HOME/standalone/configuration/standalone.xml .
@@ -80,10 +80,10 @@ NOTE: (Just for quick testing. In production, you should use different root pass
 
 9) Then run GATEIN and enjoy containers under:
 http://localhost:8080/portal
-http://localhost:8080/sample-portal1
-http://localhost:8080/sample-portal2
+http://localhost:8080/sampleportal1
+http://localhost:8080/sampleportal2
 ...
-http://localhost:8080/sample-portal10
+http://localhost:8080/sampleportal10
 
-Note: We have one portal container and 10 sample-portal containers. So 11 portal containers totally.
+Note: We have one portal container and 10 sampleportal containers. So 11 portal containers totally.
 
