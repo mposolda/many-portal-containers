@@ -3,7 +3,8 @@ How to setup portal to use shared datasources for all portal containers
 
 Normally you need to setup 2 datasources (IDM and JCR) for each portal container. So if you have 10 portal containers,
 you need to add 20 datasources into standalone.xml . Bad thing is that you also can't share same database if you want data
-for each portal container isolated from each other.
+for each portal container isolated from each other, so you need 10 databases (You can share IDM and JCR for one portal container into same DB,
+but you can't share JCR DB between portal containers).
 
 Here are the steps to setup portal to use just 2 shared datasources (both can run on one DB) for all portal containers.
 
@@ -16,13 +17,13 @@ container. So for 10 portal containers, you need to have 10 security domains)
 
 2.a) Delete suffix ${container.name.suffix} from property "hibernate.connection.datasource" of HibernateService. So the property
 value will look like this:
-<property name="hibernate.connection.datasource" value="${gatein.idm.datasource.name}"/>
+&lt;property name="hibernate.connection.datasource" value="${gatein.idm.datasource.name}"/&gt;
 
 2.b) Remove ${container.name.suffix} from property "bind-name" of InitialContextInitializer plugin. So the propery will look like this:
-        <value-param>
-          <name>bind-name</name>
-          <value>${gatein.idm.datasource.name}</value>
-        </value-param>
+        &lt;value-param&gt;
+          &lt;name&gt;bind-name&lt;/name&gt;
+          &lt;value&gt;${gatein.idm.datasource.name}&lt;/value&gt;
+        &lt;/value-param&gt;
 
 3) Setup JCR.
 
@@ -32,11 +33,11 @@ property "bind-name" of InitialContextInitializer plugin similarly like for IDM 
 3.b) In GATEIN_HOME/gatein/gatein.ear/portal.war/WEB-INF/conf/jcr/repository-configuration.xml there are 2 changes for every workspace (So 6 changes in total in this file).
 So for each workspace the mentioned 2 changes are:
 - Remove ${container.name.suffix} from property "source-name" of container configuration. So the property value will look like this:
-<property name="source-name" value="${gatein.jcr.datasource.name}"/>
+&lt;property name="source-name" value="${gatein.jcr.datasource.name}"/&gt;
 
 - Remove ${container.name.suffix} from property "jbosscache-cl-cache.jdbc.datasource" of lock-manager. So the property value will look like this:
-              <property name="jbosscache-cl-cache.jdbc.datasource"
-                        value="${gatein.jcr.datasource.name}"/>
+              &lt;property name="jbosscache-cl-cache.jdbc.datasource"
+                        value="${gatein.jcr.datasource.name}"/&gt;
 
 Don't forget to repeat these 2 steps for each workspace
 
@@ -48,24 +49,25 @@ and for workspace "system" on portal container "sampleportal" you will have tabl
 So total number of JCR tables is 3*5*X (3 is number of tables per workspace, 5 is number for workspaces in GateIn, X is number of portal containers))
 
 So for workspace "portal-system" you need to change property like this:
-<property name="db-tablename-suffix" value="PSYSTEM${container.name.suffix}"/>
+&lt;property name="db-tablename-suffix" value="PSYSTEM${container.name.suffix}"/&gt;
 
 And for workspace "portal-work" you need to change property like this:
-<property name="db-tablename-suffix" value="PWORK${container.name.suffix}"/>
+&lt;property name="db-tablename-suffix" value="PWORK${container.name.suffix}"/&gt;
 
 For workspace "system" this property actually doesn't exist, so you need to add it with value:
-<property name="db-tablename-suffix" value="SYSTEM${container.name.suffix}"/>
+&lt;property name="db-tablename-suffix" value="SYSTEM${container.name.suffix}"/&gt;
 
 3.d) Similar changes need to be done in repository configuration for WSRP. It's in file GATEIN_HOME/gatein/extensions/gatein-wsrp-integration.ear/extension-war.war/WEB-INF/conf/wsrp/repository-configuration.xml
 So you need again to delete $container.name.suffix for both workspaces "wsrp-system" and "pc-system" as mentioned in (3.b)
 
 And then you need to change property "db-tablename-suffix" for "wsrp-system" to be like this
-<property name="db-tablename-suffix" value="WSRPSYS${container.name.suffix}"/>
+&lt;property name="db-tablename-suffix" value="WSRPSYS${container.name.suffix}"/&gt;
 
 And add this property for "pc-system" with value like this:
 
 
 4) Known limitations:
+
 4.a) Make sure that your portal containers has only character like letters and numbers in name.
 For example: Your container could be named "sampleportal" but not "sample-portal" because of "-" character. This is due
 to the fact that names of portal container is used in name of DB tables and indexes (See point 3.c).
