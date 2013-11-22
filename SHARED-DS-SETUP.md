@@ -19,7 +19,7 @@ container. So for 10 portal containers, you need to have 10 security domains)
 value will look like this:
 &lt;property name="hibernate.connection.datasource" value="${gatein.idm.datasource.name}"/&gt;
 
-2.b) Remove ${container.name.suffix} from property "bind-name" of InitialContextInitializer plugin. So the propery will look like this:
+2.b) Remove ${container.name.suffix} from property "bind-name" of InitialContextInitializer plugin. So the property will look like this:
         &lt;value-param&gt;
           &lt;name&gt;bind-name&lt;/name&gt;
           &lt;value&gt;${gatein.idm.datasource.name}&lt;/value&gt;
@@ -46,7 +46,7 @@ the ${container.name.suffix} part. It is needed for having separate set of table
 (For example: For workspace "system" on portal container "portal" you will have tables like:
 JCR_ISYSTEM_portal, JCR_VSYSTEM_portal, JCR_RSYSTEM_portal
 and for workspace "system" on portal container "sampleportal" you will have tables like: JCR_ISYSTEM_sampleportal, JCR_VSYSTEM_sampleportal, JCR_RSYSTEM_sampleportal.
-So total number of JCR tables is 3*5*X (3 is number of tables per workspace, 5 is number for workspaces in GateIn, X is number of portal containers))
+So total number of JCR tables is 3*5*X (3 is count of tables per workspace, 5 is count for workspaces in GateIn, X is count of portal containers))
 
 So for workspace "portal-system" you need to change property like this:
 &lt;property name="db-tablename-suffix" value="PSYSTEM${container.name.suffix}"/&gt;
@@ -64,7 +64,7 @@ And then you need to change property "db-tablename-suffix" for "wsrp-system" to 
 &lt;property name="db-tablename-suffix" value="WSRPSYS${container.name.suffix}"/&gt;
 
 And add this property for "pc-system" with value like this:
-
+&lt;property name="db-tablename-suffix" value="PCSYSTEM${container.name.suffix}"/&gt;
 
 4) Known limitations:
 
