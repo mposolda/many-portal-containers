@@ -45,13 +45,14 @@ public class GlobalOrganizationService implements Startable {
         return new GlobalOrgServiceTask() {
 
             @Override
-            protected void doTask(OrganizationService organizationService) throws Exception {
+            protected boolean doTask(OrganizationService organizationService) throws Exception {
                 User user = organizationService.getUserHandler().createUserInstance(username);
                 user.setFirstName(firstName);
                 user.setLastName(lastName);
                 user.setEmail(email);
                 user.setPassword(password);
                 organizationService.getUserHandler().createUser(user, true);
+                return true;
             }
 
         }.globalExecution("Creating user " + username);
@@ -68,10 +69,11 @@ public class GlobalOrganizationService implements Startable {
         return new GlobalOrgServiceTask() {
 
             @Override
-            protected void doTask(OrganizationService organizationService) throws Exception {
+            protected boolean doTask(OrganizationService organizationService) throws Exception {
                 User user = organizationService.getUserHandler().findUserByName(username);
                 if (user == null) {
-                    throw new Exception("Couldn't find user " + username);
+                    log.info("Couldn't find user " + username + ". Ignoring");
+                    return false;
                 }
 
                 user.setFirstName(firstName);
@@ -79,6 +81,7 @@ public class GlobalOrganizationService implements Startable {
                 user.setEmail(email);
                 user.setPassword(password);
                 organizationService.getUserHandler().saveUser(user, true);
+                return true;
             }
 
         }.globalExecution("Edit user " + username);
@@ -92,8 +95,14 @@ public class GlobalOrganizationService implements Startable {
         return new GlobalOrgServiceTask() {
 
             @Override
-            protected void doTask(OrganizationService organizationService) throws Exception {
-                organizationService.getUserHandler().removeUser(username, true);
+            protected boolean doTask(OrganizationService organizationService) throws Exception {
+
+                if (organizationService.getUserHandler().removeUser(username, true) != null) {
+                    return true;
+                } else {
+                    log.info("User " + username + " doesn't exists, so it can't be removed. Ignoring");
+                    return false;
+                }
             }
 
         }.globalExecution("Remove user " + username);
@@ -106,11 +115,11 @@ public class GlobalOrganizationService implements Startable {
         return new GlobalOrgServiceTask() {
 
             @Override
-            protected void doTask(OrganizationService organizationService) throws Exception {
-                createGroupImpl(groupPath, organizationService);
+            protected boolean doTask(OrganizationService organizationService) throws Exception {
+                return createGroupImpl(groupPath, organizationService);
             }
 
-            private void createGroupImpl(String groupPath, OrganizationService orgService) throws Exception {
+            private boolean createGroupImpl(String groupPath, OrganizationService orgService) throws Exception {
                 int lastIndex = groupPath.lastIndexOf("/");
                 String parentPath = groupPath.substring(0, lastIndex);
                 String groupName = groupPath.substring(lastIndex + 1);
@@ -130,6 +139,7 @@ public class GlobalOrganizationService implements Startable {
                 newGroup.setLabel(groupName);
 
                 groupDAO.addChild(parentGroup, newGroup, true);
+                return true;
             }
 
         }.globalExecution("Creating group " + groupPath);
@@ -142,14 +152,15 @@ public class GlobalOrganizationService implements Startable {
         return new GlobalOrgServiceTask() {
 
             @Override
-            protected void doTask(OrganizationService organizationService) throws Exception {
+            protected boolean doTask(OrganizationService organizationService) throws Exception {
                 GroupHandler groupDAO = organizationService.getGroupHandler();
                 Group group = groupDAO.findGroupById(groupPath);
                 if (group == null) {
                     log.info("Group " + groupPath + " not found. Ignoring removal");
-                    return;
+                    return false;
                 }
                 groupDAO.removeGroup(group, true);
+                return true;
             }
 
         }.globalExecution("Removing group " + groupPath);
@@ -164,26 +175,27 @@ public class GlobalOrganizationService implements Startable {
         return new GlobalOrgServiceTask() {
 
             @Override
-            protected void doTask(OrganizationService organizationService) throws Exception {
+            protected boolean doTask(OrganizationService organizationService) throws Exception {
                 User user = organizationService.getUserHandler().findUserByName(username);
                 if (user == null) {
                     log.info("User " + username + " doesn't exist. Ignoring");
-                    return;
+                    return false;
                 }
 
                 Group group = organizationService.getGroupHandler().findGroupById(groupPath);
                 if (group == null) {
                     log.info("Group " + groupPath + " doesn't exist. Ignoring");
-                    return;
+                    return false;
                 }
 
                 MembershipType mt = organizationService.getMembershipTypeHandler().findMembershipType(membershipType);
                 if (mt == null) {
-                    log.info("MembershipType " + mt + " doesn't exist. Ignoring");
-                    return;
+                    log.info("MembershipType " + membershipType + " doesn't exist. Ignoring");
+                    return false;
                 }
 
                 organizationService.getMembershipHandler().linkMembership(user, group, mt, true);
+                return true;
             }
 
         }.globalExecution("Add membership " + membershipType + ":" + groupPath + " to user " + username);
@@ -198,13 +210,14 @@ public class GlobalOrganizationService implements Startable {
         return new GlobalOrgServiceTask() {
 
             @Override
-            protected void doTask(OrganizationService organizationService) throws Exception {
+            protected boolean doTask(OrganizationService organizationService) throws Exception {
                 Membership membership = organizationService.getMembershipHandler().findMembershipByUserGroupAndType(username, groupPath, membershipType);
                 if (membership == null) {
                     log.info("Membership " + membershipType + ":" + groupPath + " doesn't exists on user " + username + ". Ignoring");
-                    return;
+                    return false;
                 }
                 organizationService.getMembershipHandler().removeMembership(membership.getId(), true);
+                return true;
             }
 
         }.globalExecution("Removing membership " + membershipType + ":" + groupPath + " to user " + username);
@@ -230,6 +243,7 @@ public class GlobalOrganizationService implements Startable {
                 List<PortalContainer> portalContainers = rootContainer.getComponentInstancesOfType(PortalContainer.class);
 
                 int successCounter = 0;
+                int ignoredCounter = 0;
                 int failedCounter = 0;
                 for (PortalContainer pContainer : portalContainers) {
                     OrganizationService orgService = pContainer.getComponentInstanceOfType(OrganizationService.class);
@@ -237,8 +251,13 @@ public class GlobalOrganizationService implements Startable {
                     try {
                         ExoContainerContext.setCurrentContainer(pContainer);
                         RequestLifeCycle.begin(pContainer);
-                        doTask(orgService);
-                        successCounter++;
+                        boolean result = doTask(orgService);
+                        if (result) {
+                            successCounter++;
+                        } else {
+                            log.info("Task '" + taskDescription + "' ignored for portalContainer '" + pContainer.getName() + "'.");
+                            ignoredCounter++;
+                        }
                     } catch (Exception e) {
                         log.error("Calling of task '" + taskDescription + "' failed for portalContainer '" + pContainer.getName() + "'.", e);
                         failedCounter++;
@@ -247,8 +266,9 @@ public class GlobalOrganizationService implements Startable {
                     }
                 }
 
-                String output = "Task '" + taskDescription + "' done. Number of passed containers: " + successCounter + ", number of failed containers: " + failedCounter;
-                if (failedCounter > 0) {
+                String output = "Task '" + taskDescription + "' done. Number of passed containers: " + successCounter + ", number of ignored containers: " +
+                        ignoredCounter + ", number of failed containers: " + failedCounter;
+                if (failedCounter > 0 || ignoredCounter > 0) {
                     output = output + ", See server.log for details about errors";
                 }
                 return output;
@@ -257,6 +277,6 @@ public class GlobalOrganizationService implements Startable {
             }
         }
 
-        protected abstract void doTask(OrganizationService organizationService) throws Exception;
+        protected abstract boolean doTask(OrganizationService organizationService) throws Exception;
     }
 }
