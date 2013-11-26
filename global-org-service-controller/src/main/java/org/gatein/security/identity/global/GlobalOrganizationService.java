@@ -16,6 +16,10 @@ import org.exoplatform.management.jmx.annotations.NameTemplate;
 import org.exoplatform.management.jmx.annotations.Property;
 import org.exoplatform.services.log.ExoLogger;
 import org.exoplatform.services.log.Log;
+import org.exoplatform.services.organization.Group;
+import org.exoplatform.services.organization.GroupHandler;
+import org.exoplatform.services.organization.Membership;
+import org.exoplatform.services.organization.MembershipType;
 import org.exoplatform.services.organization.OrganizationService;
 import org.exoplatform.services.organization.User;
 import org.picocontainer.Startable;
@@ -99,14 +103,56 @@ public class GlobalOrganizationService implements Startable {
     @ManagedDescription("Create group globally. Argument is groupPath (ie. /platform/toto )")
     @Impact(ImpactType.WRITE)
     public String createGroup(@ManagedName("groupPath") final String groupPath) {
-        return null; // TODO
+        return new GlobalOrgServiceTask() {
+
+            @Override
+            protected void doTask(OrganizationService organizationService) throws Exception {
+                createGroupImpl(groupPath, organizationService);
+            }
+
+            private void createGroupImpl(String groupPath, OrganizationService orgService) throws Exception {
+                int lastIndex = groupPath.lastIndexOf("/");
+                String parentPath = groupPath.substring(0, lastIndex);
+                String groupName = groupPath.substring(lastIndex + 1);
+                GroupHandler groupDAO = orgService.getGroupHandler();
+                Group parentGroup = groupDAO.findGroupById(parentPath);
+                if (parentGroup == null) {
+                    // Create level1 Group
+                    if (parentPath != null && !parentPath.isEmpty()) {
+                        log.info("Parent group with ID: " + parentPath + " doesn't exist. Creating it recursively");
+                        createGroupImpl(parentPath, orgService);
+                    }
+                    parentGroup = groupDAO.findGroupById(parentPath);
+                }
+
+                Group newGroup = groupDAO.createGroupInstance();
+                newGroup.setGroupName(groupName);
+                newGroup.setLabel(groupName);
+
+                groupDAO.addChild(parentGroup, newGroup, true);
+            }
+
+        }.globalExecution("Creating group " + groupPath);
     }
 
     @Managed
     @ManagedDescription("Create group globally. Argument is groupPath (ie. /platform/toto )")
     @Impact(ImpactType.WRITE)
     public String removeGroup(@ManagedName("groupPath") final String groupPath) {
-        return null; // TODO
+        return new GlobalOrgServiceTask() {
+
+            @Override
+            protected void doTask(OrganizationService organizationService) throws Exception {
+                GroupHandler groupDAO = organizationService.getGroupHandler();
+                Group group = groupDAO.findGroupById(groupPath);
+                if (group == null) {
+                    log.info("Group " + groupPath + " not found. Ignoring removal");
+                    return;
+                }
+                groupDAO.removeGroup(group, true);
+            }
+
+        }.globalExecution("Removing group " + groupPath);
     }
 
     @Managed
@@ -115,7 +161,32 @@ public class GlobalOrganizationService implements Startable {
     public String addMembership(@ManagedName("username") final String username,
                                 @ManagedName("groupPath") final String groupPath,
                                 @ManagedName("membershipType") final String membershipType) {
-        return null;  // TODO
+        return new GlobalOrgServiceTask() {
+
+            @Override
+            protected void doTask(OrganizationService organizationService) throws Exception {
+                User user = organizationService.getUserHandler().findUserByName(username);
+                if (user == null) {
+                    log.info("User " + username + " doesn't exist. Ignoring");
+                    return;
+                }
+
+                Group group = organizationService.getGroupHandler().findGroupById(groupPath);
+                if (group == null) {
+                    log.info("Group " + groupPath + " doesn't exist. Ignoring");
+                    return;
+                }
+
+                MembershipType mt = organizationService.getMembershipTypeHandler().findMembershipType(membershipType);
+                if (mt == null) {
+                    log.info("MembershipType " + mt + " doesn't exist. Ignoring");
+                    return;
+                }
+
+                organizationService.getMembershipHandler().linkMembership(user, group, mt, true);
+            }
+
+        }.globalExecution("Add membership " + membershipType + ":" + groupPath + " to user " + username);
     }
 
     @Managed
@@ -124,7 +195,19 @@ public class GlobalOrganizationService implements Startable {
     public String removeMembership(@ManagedName("username") final String username,
                                    @ManagedName("groupPath") final String groupPath,
                                    @ManagedName("membershipType") final String membershipType) {
-        return null; // TODO
+        return new GlobalOrgServiceTask() {
+
+            @Override
+            protected void doTask(OrganizationService organizationService) throws Exception {
+                Membership membership = organizationService.getMembershipHandler().findMembershipByUserGroupAndType(username, groupPath, membershipType);
+                if (membership == null) {
+                    log.info("Membership " + membershipType + ":" + groupPath + " doesn't exists on user " + username + ". Ignoring");
+                    return;
+                }
+                organizationService.getMembershipHandler().removeMembership(membership.getId(), true);
+            }
+
+        }.globalExecution("Removing membership " + membershipType + ":" + groupPath + " to user " + username);
     }
 
 
