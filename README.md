@@ -6,7 +6,7 @@ Util to create and deploy many portal containers into your GateIn/JPP
 EXAMPLE STEPS FOR CREATE AND DEPLOY 10 SAMPLE CONTAINERS ON SEPARATE DATABASES
 ==============================================================================
 
-1) Build with "mvn clean install"
+1) Build with "mvn clean install" (You will need maven 3.0.4 or newer)
 
 2) Configure your GateIn to run with MySQL. It means:
 
